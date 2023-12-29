@@ -1,0 +1,88 @@
+*{
+    padding: 1% 0% 0% 0%;
+    margin: 0;
+    font-family: 'Proximanova opt',sans-serif;
+}
+
+/*nav*/
+nav{
+    position: fixed;
+    display: flex;
+    border: 2px solid red;
+    width: 100%;
+}
+nav p{
+    padding-left: 5%;
+    color: #50bca0;
+    font-weight: bolder;
+}
+nav li{
+    position: relative;
+    left: 20%;
+}
+nav button{
+    position: relative;
+    left: 40%;
+}
+/*nav ends*/
+/*header*/
+header{
+    padding-top: 7%;
+}
+.header-first-section{
+    display: flex;
+}
+.bi{
+    color: #50bca0;
+}
+.container{
+    display: flex;
+    border: 2px solid blue;
+    justify-content: center;
+    gap: 4%;
+    background-color: #f2fafe;
+    padding: 9% 7% 9% 7%;
+}
+.container  button{
+    width: 90%;
+    height: 40px;
+    background-color: #50bca0;
+    color: white;
+    margin-top:5%;
+}
+.workflow{
+    background-color: #fbfdff;
+    box-shadow: 3px 2px 2px 2px rgb(149, 146, 146);
+    width: 30%;
+    padding: 3% 0% 3% 5%;
+}
+.workflow p{
+    margin: 4% 0% 4% 0%;
+}
+.workflow-plus p{
+    margin: 4% 0% 4% 0%;
+}
+.workflow-plus{
+    background-color: #fbfdff;
+    box-shadow: 2px 2px 2px 2px rgb(149, 146, 146);
+    width: 30%;
+    padding: 3% 0% 3% 5%;
+}
+.line{
+    height: px;
+    width: 90%;
+    background-color: #50bca0;
+}
+.most-popular{
+    background-color: #50bca0;
+    color:white ;
+    position: relative;
+    left: 60%;
+    text-align: center;
+    width: 44%;
+    padding: 3%;
+    transform: rotate(40deg);
+    font-size: smaller;
+    bottom: 7px;
+}
+/*header*/

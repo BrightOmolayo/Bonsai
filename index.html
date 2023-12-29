@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonsai</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <p>bonsai</p>
+        <li><select name="product" id="product"> </select></li>
+        <li>product<select name="Templates" id="Templates">Templates</select></li>
+        <li>pricing</li>
+        <li>reviews</li>
+        <button>LOG IN</button>
+        <button> START FREE</button>
+    </nav>
     <header>
-        <nav>
-            <p>bonsai</p>
-            <li><select name="product" id="product"> </select></li>
-            <li>product<select name="Templates" id="Templates">Templates</select></li>
-            <li>pricing</li>
-            <li>reviews</li>
-            <button>LOG IN</button>
-            <button> START FREE</button>
-        </nav>
         <p>2 MONTHS FREE</p>
         <div class="header-first-section">
             <h1>PLANS & PRICING</h1>
@@ -24,41 +25,43 @@
             <div class="toggle"><!--<button>on and off switch</button>--> </div> 
             <p>YEARLY</p>
         </div>
-
-        <div class="workflow">
-            <h2>Workflow</h2>
-            <h3>$ 19 / MONTH</h3>
-            <div class="line">line</div>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-
-            <button>START FREE</button>
-        </div>
-
-        <div class="workflow plus">
-            <div class="badge">
-                MOST POPULAR
+        <div class="container">
+            <div class="workflow">
+                <h2>Workflow</h2>
+                <h3>$ 19 / MONTH</h3>
+                <div class="line"></div>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+    
+                <button>START FREE</button>
             </div>
-            <h2>Workflow</h2>
-            <h3>$ 19 / MONTH</h3>
-            <div class="line">line</div>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Forms & Questionnaires</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-            <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
-
-            <button>START FREE</button>
+    
+            <div class="workflow-plus ">
+                <div class="most-popular">
+                    MOST POPULAR
+                </div>
+                <h2>Workflow Plus</h2>
+                <h3>$ 19 / MONTH</h3>
+                <div class="line"></div>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Forms & Questionnaires</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+                <p><i class="bi bi-check-lg"></i>Unlimited Clients & Projects</p>
+    
+                <button>START FREE</button>
+            </div>
         </div>
+
     </header>
 
     <main>
@@ -158,117 +161,171 @@
                 <div id="dropdown1" >
                     <a href=""><li>Invoice Generator</li></a>
                     <a href=""><li>Blank Invoice Template</li></a>
-                    <a href=""><li></li></a>
-                    <a href=""><li></li></a>
-                    <a href=""><li></li></a>
-                    <a href=""><li></li></a>
-                    <a href=""><li></li></a>
-                    <a href=""><li></li></a>
-                    <a href=""><li></li></a>
+                    <a href=""><li>Consultant Invoice Template</li></a>
+                    <a href=""><li>Graphic Design Invoice</li></a>
+                    <a href=""><li>Editable Invoice Template</li></a>
+                    <a href=""><li>Web Design Invoice</li></a>
+                    <a href=""><li>Contractor Invoice Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Proposal Templates
+
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Contract Templates
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Agreement Templates
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
+                   
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Scope of Work Templates
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Quote Templates
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Credit Note Templates
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Estimate Templates
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
             <div class="design "   >
                 <h5 onclick="myFunction()">
-                    DISCOVER MUSIC
+                    Form Templates
                 </h5>
                 <div id="dropdown1" >
-                    <a href="./404.html" target="_blank" id="link1"> </a>
-                    <a href="./404.html" target="_blank" id="link2"></a>
-                    <a href="./404.html" target="_blank" id="link3"></a>
-                    <a href="./404.html" target="_blank" id="link4"></a>
+                    <a href=""><li>Website Proposal Template</li></a>
+                    <a href=""><li>Digital Marketing Proposal</li></a>
+                    <a href=""><li>Template</li></a>
+                    <a href=""><li>Social Media Marketing Proposal</li></a>
+                    <a href=""><li>Graphic Design Proposal</li></a>
+                    <a href=""><li>Freelance Proposal Template</li></a>
+                    <a href=""><li>SEO Proposal Template</li></a>
+                    <a href=""><li>Photography Invoice Template</li></a>
+                    <a href=""><li>Self Employed Invoice Template</li></a>
                 </div>
             </div>
         </div>
 <!--lots of dropdowns ends-->
         <div class="BONSAI">
             <h5>BONSAI</h5>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Careers</li></a>
+            <a href=""><li>Support</li></a>
+            <a href=""><li>LinkedIn</li></a>
+            <a href=""><li>Twitter</li></a>
+            <a href=""><li>Legal</li></a>
+            <a href=""><li>Privacy policies</li></a>
+            <a href="extra margin top"><li>Affiliate</li></a>
+            <a href="extra margin bottom"><li>Write for us</li></a> 
+
+            <div class="design "   >
+                <p onclick="myFunction()">
+                    Comparisons
+                </p>
+                <div id="dropdown1" >
+                    <a href=""><li>Freshbooks Alternatives</li></a>
+                    <a href=""><li>Quickbooks Alternatives</li></a>
+                    <a href=""><li>Wave vs Quickbooks</li></a>
+                    <a href=""><li>Xero vs Quickbooks</li></a>
+                    <a href=""><li>Freshbooks vs Quickbooks</li></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
