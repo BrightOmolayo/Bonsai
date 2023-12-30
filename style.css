@@ -165,3 +165,8 @@ header{
     max-height: 200px;
 }
 /*accordion ends*/
+/*footer*/
+footer{
+    display: flex;
+}
+/*footer ends*/
