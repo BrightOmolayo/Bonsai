@@ -1,4 +1,4 @@
-function toggleSection(element) {
+function myFunction(element) {
     var content = element.nextElementSibling;
   
     // Close all other sections before opening the clicked one
