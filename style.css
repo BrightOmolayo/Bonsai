@@ -1,5 +1,5 @@
 *{
-    padding: 1% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
     margin: 0;
     font-family: 'Proximanova opt',sans-serif;
     background-color: #f9f9f9;
@@ -15,6 +15,7 @@ nav{
     display: flex;
     width: 100%;
     z-index: 9;
+    padding-top: 4%;
 }
 nav h4{
     padding-left: 5%;
@@ -237,7 +238,7 @@ footer a{
 @media screen  and (min-width : 120px) and (max-width : 480px){
 
     *{
-        padding: 1% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
         margin: 0;
         font-family: 'Proximanova opt',sans-serif;
         background-color: #f9f9f9;
@@ -412,7 +413,7 @@ footer a{
         display: none;
     }
     .main-first-section div{
-        margin: 2%;
+        margin: 12% 2% 12% 2%;
         box-shadow: 9px 5px 9px 9px  #e8e8ea;
         padding: 4%;
     }
