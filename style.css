@@ -238,7 +238,7 @@ footer a{
 @media screen  and (min-width : 120px) and (max-width : 480px){
 
     *{
-        padding: 0% 0% 0% 0%;
+        padding:0% 2% 2% 2%;
         margin: 0;
         font-family: 'Proximanova opt',sans-serif;
         background-color: #f9f9f9;
@@ -255,17 +255,24 @@ footer a{
         width: 100%;
         z-index: 9;
     }
+    .reviews{
+        display: none;
+    }
+    .pricing{
+        display: none;
+    }
     nav h4{
-        padding-left: 5%;
+        padding-left: 3%;
         color: #50bca0;
-        font-weight: bolder;
-        font-size: larger;
+        font-weight: light;
+        font-size: medium;
     }
     nav li{
         position: relative;
-        left: 5%;
+        left: 1%;
         list-style: none;
-        margin-left: 4%;
+        margin-left: 3%;
+        font-size: smaller;
     }
     nav .bi{
         color: black;
@@ -344,20 +351,22 @@ footer a{
     }
     .bi{
         color: #50bca0;
+        background-color: transparent;
     }
     .container{
         display: block;
         justify-content: center;
-        gap: 4%;
+        gap: 0%;
         background-color: #f2fafe;
-        padding: 9% 7% 9% 7%;
+        padding: 10% 7% 9% 7%;
+        margin-top: 14%;
     }
     .container  button{
-        width: 90%;
+        width: 80%;
         height: 40px;
         background-color: #50bca0;
         color: white;
-        margin-top:5%;
+        margin:5% 0% 5% 6%;
     }
     .workflow{
         background-color: #fbfdff;
@@ -368,10 +377,10 @@ footer a{
         left: 12%;
     }
     .workflow p{
-        margin: 4% 0% 4% 0%;
+        margin: 6% 0% 6% 0%;
     }
     .workflow-plus p{
-        margin: 4% 0% 4% 0%;
+        margin: 6% 0% 6% 0%;
     }
     .workflow-plus{
         background-color: #fbfdff;
@@ -383,7 +392,7 @@ footer a{
         left: 12%;
     }
     .line{
-        height: px;
+        height: 1px;
         width: 80%;
         background-color: #50bca0;
 
