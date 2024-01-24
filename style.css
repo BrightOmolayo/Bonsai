@@ -101,6 +101,10 @@ header{
 .header-first-section{
     display: flex;
 }
+
+.monthly{
+    display: none;
+}
 .bi{
     color: #50bca0;
 }
@@ -238,7 +242,7 @@ footer a{
 @media screen  and (min-width : 120px) and (max-width : 480px){
 
     *{
-        padding: 0% 0% 0% 0%;
+        padding:0% 2% 2% 2%;
         margin: 0;
         font-family: 'Proximanova opt',sans-serif;
         background-color: #f9f9f9;
@@ -255,17 +259,24 @@ footer a{
         width: 100%;
         z-index: 9;
     }
+    .reviews{
+        display: none;
+    }
+    .pricing{
+        display: none;
+    }
     nav h4{
-        padding-left: 5%;
+        padding-left: 3%;
         color: #50bca0;
-        font-weight: bolder;
-        font-size: larger;
+        font-weight: light;
+        font-size: medium;
     }
     nav li{
         position: relative;
-        left: 5%;
+        left: 1%;
         list-style: none;
-        margin-left: 4%;
+        margin-left: 3%;
+        font-size: smaller;
     }
     nav .bi{
         color: black;
@@ -344,20 +355,22 @@ footer a{
     }
     .bi{
         color: #50bca0;
+        background-color: transparent;
     }
     .container{
         display: block;
         justify-content: center;
-        gap: 4%;
+        gap: 0%;
         background-color: #f2fafe;
-        padding: 9% 7% 9% 7%;
+        padding: 10% 7% 9% 7%;
+        margin-top: 14%;
     }
     .container  button{
-        width: 90%;
+        width: 80%;
         height: 40px;
         background-color: #50bca0;
         color: white;
-        margin-top:5%;
+        margin:5% 0% 5% 6%;
     }
     .workflow{
         background-color: #fbfdff;
@@ -368,10 +381,10 @@ footer a{
         left: 12%;
     }
     .workflow p{
-        margin: 4% 0% 4% 0%;
+        margin: 6% 0% 6% 0%;
     }
     .workflow-plus p{
-        margin: 4% 0% 4% 0%;
+        margin: 6% 0% 6% 0%;
     }
     .workflow-plus{
         background-color: #fbfdff;
@@ -383,7 +396,7 @@ footer a{
         left: 12%;
     }
     .line{
-        height: px;
+        height: 1px;
         width: 80%;
         background-color: #50bca0;
 
@@ -447,13 +460,14 @@ footer a{
     }
     .main-third-section{
         position: relative;
-        left: 20%;
-        width: 50%;
+        left: 10%;
+        width: 80%;
         margin-bottom: 5%;
+        padding-top: 4%;
     }
     .main-third-section h2{
         color: #50bca0;
-        margin-bottom: 2%;
+        margin-bottom: 8%;
     }
     .main-third-section h5{
         font-size: large;
@@ -467,11 +481,11 @@ footer a{
     .dropdown1{
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        transition: max-height 2.7s ease;
     }
     .dropdown1.show{
-        padding: 10px;
-        max-height: 200px;
+        padding: 9px;
+        max-height: 270px;
     }
     /*accordion ends*/
     /*footer*/
@@ -484,9 +498,21 @@ footer a{
         list-style: none;
         margin-top: 3%;
     }
+
+    footer div{
+        position: relative;
+        left: 4%;
+    }
     footer a{
         color: black;
         text-decoration: none;
+    }
+    .Comparisons{
+        display: none;
+    }
+    .template{
+        position: relative;
+        right: 50%;
     }
     /*footer ends*/
 
