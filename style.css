@@ -101,6 +101,10 @@ header{
 .header-first-section{
     display: flex;
 }
+
+.monthly{
+    display: none;
+}
 .bi{
     color: #50bca0;
 }
