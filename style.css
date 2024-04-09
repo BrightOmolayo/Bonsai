@@ -275,8 +275,18 @@ footer a{
         position: relative;
         left: 1%;
         list-style: none;
-        margin-left: 3%;
+        margin-left: 2%;
         font-size: smaller;
+        padding-top: 10px;
+    }
+    .product{
+        margin-right: 10px;
+        padding: 0px;
+        width: 70px;
+    }
+    .template{
+        padding: 0%;
+        width: 80px; 
     }
     nav .bi{
         color: black;
