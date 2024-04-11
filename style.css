@@ -18,6 +18,9 @@ nav{
     z-index: 9;
     padding-top: 4%;
 }
+#hambuger-menu{
+    display: none;
+}
 nav h4{
     padding-left: 5%;
     color: #50bca0;
@@ -256,7 +259,7 @@ footer a{
     /*nav*/
     nav{
         position: fixed;
-        display: flex;
+        display: none;
         width: 100%;
         z-index: 9;
     }
