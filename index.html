@@ -6,41 +6,162 @@
     <title>Bonsai Freelance Solution</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/bonsai logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2cbfcacb03.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav>
-        <div class="logo"></div>
-        <div class="hambuger-icon" id="hambugerIcon" onclick="hamburgerIconFunction()">
-            <div class="hamburger-button">
-                <div class="hambuger-icon-div-1"></div>
-                <div class="hambuger-icon-div-2"></div>
-                <div class="hambuger-icon-div-3"></div>
-            </div>
-            <!--hamburger icon content-->
-            <div class="hamburger-icon-content">
-                <div class="hamburger-logo">
-                    <img src="./images/bonsai logo.jpg" alt="Bonsai Logo">
+    <header>
+       <nav>
+           <div class="logo">
+            <img src="./images/bonsai logo.jpg" alt="bonsai logo">
+            <p>bonsai</p>
+           </div>
+           <div class="hamburger-icon" id="hambugerIcon" onclick="hamburgerIconFunction()">
+                <div class="hamburger-button">
+                   <div class="hambuger-icon-div-1"></div>
+                   <div class="hambuger-icon-div-2"></div>
+                   <div class="hambuger-icon-div-3"></div>
                 </div>
-                <!--product div is a link to a ul -->
-                <div class="product">Product</div>
-                <div class="line line1"></div>
-                <!--templates div is a link to a ul -->
-                <div class="templates">Templates</div>
-                <div class="line line2"></div>
-                <div class="pricing">Pricing</div>
-                <div class="line line3"></div>
-                <div class="reviews">Reviews</div>
-                <div class="line line4"></div>
-                <a href="" class="login-link">
-                    <button class="login-button">LOG IN</button>
-                </a>
-                <a href="" class="start-free-link">
-                    <button class="start-button">START FREE</button>
-                </a>
+                <!--hamburger icon content-->
+                <div class="hamburger-icon-content">
+                    <div class="hamburger-logo">
+                       <img src="./images/bonsai logo.jpg" alt="Bonsai Logo">
+                    </div>
+                    <!--product div is a link to a ul -->
+                    <div class="product">
+                        <p>Product<i class="fa-solid fa-chevron-down"></i></p>
+                        <dialog id="productContent">
+                            <ul>
+                               <li> <img src="./images/invoice-icon.svg" alt="Invoice-icon"></i> Invoice</li>
+                               <li> <img src="./images/Proposals icon.svg" alt="Proposals icon"> Proposals</li>
+                               <li> <img src="./images/contracts icon.svg" alt="Contracts icon">Contracts</li>
+                               <li> <img src="./images/people-outline.svg" alt="People-outline icon"> Client CRM</li>
+                               <li> <img src="./images/reader-outline.svg" alt="Reader-outline icon"></li>
+                               <li> <img src="./images/time tracking icon.svg" alt="Time tracking icon"></li>
+                            </ul>
+                        </dialog>
+                    </div>
+                    <div class="line line1"></div>
+                    <!--templates div is a link to a ul -->
+                    <div class="templates">
+                        <p>Templates<i class="fa-solid fa-chevron-down"></i></p>
+                        <dialog id="templatesContent">
+                            <ul>
+                                <li> <img src="./images/contracts icon.svg" alt="Contracts icon"> Contracts Templates</li>
+                                <li> <img src="./images/contracts icon.svg" alt="Contracts icon"> Proposals Templates</li>
+                                <li> <img src="./images/invoice-icon.svg" alt="Invoice-icon"> Invoice Templates</li>
+                                <li> <img src="./images/contracts icon.svg" alt="Contracts icon"> Agreement Templates</li>
+                                <li> <img src="./images/Proposals icon.svg" alt="Proposals icon"> Qoutes Templates</li>
+                                <li> <img src="./images/time tracking icon.svg" alt="Time tracking icon"> Scope Of Work Templates</li>
+                            </ul>
+                        </dialog>
+                    </div>
+                    <div class="line line2"></div>
+                    <div class="pricing"><a href="index.html">Pricing</a></div>
+                    <div class="line line3"></div>
+                    <div class="reviews"><a href="index.html">Reviews</a></div>
+                    <div class="line line4"></div>
+                    <div class="login-button-div">
+                        <button class="login-button">LOG IN</button>
+                        <dialog>
+                            <form action="" method="dialog">
+
+                                <p>Sign In</p>
+
+                                <div class="form-lines">
+                                    <div class="line1"></div>
+                                    <p>or</p>
+                                    <div class="line2"></div>
+                                </div>
+                                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                                <input type="password" id="password" name="lname" placeholder="Password" required><br>
+                                <button type="radio">Remember me</button><br>
+                                <button type="submit">Log in</button>
+                                <a href="index.html">Reset Password</a>
+                                <a href="index.html">Resend Verification Email</a>
+                            </form>
+                            <ul>
+                                <li>Contact Us</li>
+                                <li>Help Center</li>
+                                <li>About Us</li>
+                                <li>Plans & Pricing</li>
+                                <li>Privacy policy</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, vero voluptas eos doloribus quibusdam, neque provident tempora cumque suscipit quam assumenda veritatis dignissimos animi minima aperiam accusantium reprehenderit pariatur ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod voluptatem voluptas fugit magni unde, quam asperiores placeat delectus voluptatibus vero eos odit saepe, tempora ab pariatur sequi minus? Eos!
+                            </p>
+                        </dialog>
+                    </div>
+                    <a href="index.html" class="start-free-link">
+                        <button class="start-button">START FREE</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="plans-pricing">
+            <p>Plans & Pricing</p>
+        </div>
+        <div class="two-months-free">
+            <p>2 MONTHS FREE</p>
+        </div>
+        <div class="last-header-text">
+            <div>
+                <h5> MONTHLY</h5>
+            </div>
+            <div class="switch-button-contain">
+                <div>b</div>
+            </div>
+            <div>
+                <h5>
+                    YEARLY
+                </h5>
             </div>
         </div>
-    </nav>
-  </header>    
+    </header>    
+    <main>
+        <div class="container">
+            <div class="sub-container1">
+                <div class="sub-container1-heading1">
+                    <h5>
+                        Starter
+                    </h5>
+                    <p>
+                        Ideal for freelancers and contractors just starting out.
+                    </p>
+                </div>
+                <div class="sub-container1-heading2">
+                    <h4>
+                        $
+                    </h4>
+                    <h2>
+                        24
+                    </h2>
+                    <h5>
+                        /MONTH
+                    </h5>
+                </div>
+                <div class="sub-container1-line">
+                </div>
+                <div class="mini-container1">
+                    
+                </div>
+                <button type="submit" class="sub-container1-button"></button>
+            </div>
+            <div class="sub-container2">
+                <div class="sub-container2-heading1"></div>
+                <div class="sub-container2-heading2"></div>
+                <div class="sub-container2-line">
+                </div>
+                <div class="mini-container2"></div>
+                <button type="submit" class="sub-container2-button"></button>
+            </div>
+            <div class="sub-container3">
+                <div class="sub-container3-heading1"></div>
+                <div class="sub-container3-heading2"></div>
+                <div class="sub-container3-line">
+                </div>
+                <div class="mini-container3"></div>
+                <button type="submit" class="sub-container1-button"></button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
