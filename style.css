@@ -1,14 +1,83 @@
-        /* Media Query for Mobile Devices */
-        @media (max-width: 480px) {
-            body {
-                background-color: rgb(247, 243, 243);
-            }
-            *{
-                padding: 0;
-                margin: 0;
-            }
-        }
-         
+/* For Mobile Devices using the mobile-first approach*/
+*{
+    padding: 0;
+    margin: 0;
+    background-color:#ffffff;
+}
+img{
+    width: 100%;
+}
+nav{
+    border: 2px solid green;
+    width: 99%;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+.devider{
+    height: 60px;
+}
+/*logo*/
+.logo{
+    width: 50%;
+    display: flex;
+}
+.logoImg{
+    width: 30%;
+}
+/*hamburger icon*/
+.hamburger-icon{
+    width: 20%;
+}
+.hamburger-logo{
+    width: 30%;
+}
+.hamburger-icon-content{
+    display: none;
+}
+.hamburger-button{
+    margin: 2px;
+}
+.iconline{
+    width: 20px;
+    background-color: black;
+    height: 4px;
+    margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /* Media Query for low resolution  Tablets, Ipads */
         @media (min-width: 481px) and (max-width: 767px) {
             body {
