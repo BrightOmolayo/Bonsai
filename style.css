@@ -7,29 +7,38 @@
 img{
     width: 100%;
 }
+/*nav*/
 nav{
     border: 2px solid green;
-    width: 99%;
+    width: 90%;
     display: flex;
     position: fixed;
     top: 0;
+    justify-content: space-between;
+    padding: 5% 0% 5% 9%;
 }
 .devider{
-    height: 60px;
+    height: 110px;
 }
 /*logo*/
 .logo{
-    width: 50%;
+    width: 53%;
     display: flex;
 }
 .logoImg{
     width: 30%;
 }
+/*bonsai*/
+.logoName{
+ font-size: 30px;
+ color: rgb(1, 178, 137);
+ font-weight: 600;
+ font-family: sans-serif;
+ margin-left: 4px;
+ padding-top: 6%;
+}
 /*hamburger icon*/
 .hamburger-icon{
-    width: 20%;
-}
-.hamburger-logo{
     width: 30%;
 }
 .hamburger-icon-content{
@@ -37,13 +46,18 @@ nav{
 }
 .hamburger-button{
     margin: 2px;
+    height: 30px;
+    width: 60%;
+    padding-top: 9%;
 }
 .iconline{
-    width: 20px;
-    background-color: black;
-    height: 4px;
-    margin: 2px;
+    width: 65%;
+    background-color: rgb(79, 79, 79);
+    height: 2px;
+    margin-top: 6px;
+    border-radius: 3px;
 }
+/*nav ends*/
 
 
 
