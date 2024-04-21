@@ -9,8 +9,7 @@ img{
 }
 /*nav*/
 nav{
-    border: 2px solid green;
-    width: 90%;
+    width: 91%;
     display: flex;
     position: fixed;
     top: 0;
@@ -56,6 +55,78 @@ nav{
     height: 2px;
     margin-top: 6px;
     border-radius: 3px;
+}
+/*plans-pricing*/
+.plans-pricing{
+    font-family:"Amerigo-bt roman opt" sans-serif;
+    font-size: 24px;
+    color: rgb(79, 79, 79);
+    padding: 3% 0% 3% 6%;
+    margin-bottom: 9px;
+}
+/*two-months-free*/
+.two-months-free{
+    display: flex;
+    border: 2px solid saddlebrown;
+    justify-content: flex-end;
+    padding:2% 11% 2% 0%;
+    margin: 5px;
+    color: rgb(1, 178, 137);
+    font-size:small;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+/*last-header-text*/
+.last-header-text{
+    border: 2px solid saddlebrown;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 12% 3% 8%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(82, 80, 80);
+    letter-spacing: 1px;
+}
+/*switch-button-contain*/
+.switch-button-container{
+    border: 2px solid rgb(1, 178, 137);
+    width: 18%;
+    height: 27px;
+    border-radius:15px;
+    background-color: rgb(1, 178, 137);
+}
+/*switch-button*/
+.switch-button{
+    width: 50%;
+    height: 27px;
+    border-radius:14px;
+}
+/*@keyframes moveToLeft {
+from{
+    transform: translateX(0);
+}
+to{
+    transform: translateX(-100px);
+}
+}
+  
+.switch-button{
+    transition: transform 0.3s ease;
+}
+  
+.move-left.clicked {
+    animation: moveToLeft 0.3s ease forwards;
+}*/
+  
+/*monthly*/
+.monthly{
+    padding-top: 10%;
+}
+/*yearly*/
+.yearly{
+    color: rgb(135, 132, 132);
+    padding-top: 10%;
 }
 /*nav ends*/
 
