@@ -207,7 +207,7 @@ li{
     background-color: rgb(1, 178, 137);
     margin: 1% 0% 4% 0%;
 }
-.first-dollar-sign{
+.dollar-sign{
     font-size:27px;
     padding-top: 15%;
     margin-right: 10px;
@@ -216,13 +216,13 @@ li{
 .twentyFour{
     font-size:70px;
 }
-.first-per-month{
+.per-month{
     padding-top: 25%;
     font-size: 19px;
     font-weight: 500;
 }
 /*sub-container1-button*/
-.sub-container1-button{
+.section1-button{
     background-color: rgb(1, 178, 137);
     padding: 10% 5% 10% 5%;
     color: white;
@@ -240,7 +240,105 @@ li{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #4c525a;
 }
+.sub-container2-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.thirty-nine{
+    font-size:70px;
+}
+.sub-container2-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
 /*.sub-container2-monthly ends*/
+/*sub-container3-monthly*/
+.business{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a; 
+}
+.sub-container3-heading1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+.sub-container3-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.seventy-nine{
+    font-size:70px;
+}
+/*sub-container3-monthly end*/
+a{
+    text-decoration: none;
+    color:  #4c525a;
+}
+/*section1 ends*/
+/*section2*/
+.adsOn-and-faq{
+    
+}
+.ads-on{
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.ads-on div{
+    border: 2px solid transparent;
+    padding:5% 5% 5% 12%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0px 0px 35px #e0dbdb;
+    display: block;
+}
+.ad3-link{
+    color:rgb(1, 178, 137) ;
+    padding: 40px 0px 40px 0px;
+}
+.ad3-link::after{
+    content: '>';
+}
+.ads-on h5{
+    font-size: 33px;
+}
+.free{
+    font-size: 21px;
+}
+.ads-on  h6{
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+.ads-para{
+    font-size: 14.5px;
+    font-weight: -100;
+    line-height: 22px;
+}
+.ads-para3{
+    margin-bottom: 15px;
+}
+.adsOn-and-faq h4{
+    text-align: center;
+    font-size: 19px;
+    line-height: 35px;
+    color: #4c525a;
+    font-family: 'Amerigo-bt roman opt';
+    font-weight: lighter;
+    margin: 30px 0px 30px 0px;
+    padding: 20px 3px 20px 3px;
+}
+
 
 
 
