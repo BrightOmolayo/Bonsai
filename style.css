@@ -2,11 +2,11 @@
 *{
     padding: 0;
     margin: 0;
-    background-color:#ffffff;
 }
 img{
     width: 100%;
 }
+/*header*/
 /*nav*/
 nav{
     width: 91%;
@@ -15,6 +15,7 @@ nav{
     top: 0;
     justify-content: space-between;
     padding: 5% 0% 5% 9%;
+    background-color: white;
 }
 .devider{
     height: 110px;
@@ -56,6 +57,7 @@ nav{
     margin-top: 6px;
     border-radius: 3px;
 }
+/*nav ends*/
 /*plans-pricing*/
 .plans-pricing{
     font-family:"Amerigo-bt roman opt" sans-serif;
@@ -67,26 +69,26 @@ nav{
 /*two-months-free*/
 .two-months-free{
     display: flex;
-    border: 2px solid saddlebrown;
     justify-content: flex-end;
-    padding:2% 11% 2% 0%;
+    padding:2% 9% 2% 0%;
     margin: 5px;
-    color: rgb(1, 178, 137);
+    color: rgb(6, 186, 144);
     font-size:small;
     font-weight: 600;
     font-family: sans-serif;
+    letter-spacing: 0.5px;
 }
 /*last-header-text*/
 .last-header-text{
-    border: 2px solid saddlebrown;
     display: flex;
     justify-content: space-between;
-    padding: 3% 12% 3% 8%;
+    padding: 3% 12% 3% 10%;
     font-size: 18px;
     font-weight: 600;
     font-family: sans-serif;
     color: rgb(82, 80, 80);
     letter-spacing: 1px;
+    margin-bottom: 1%;
 }
 /*switch-button-contain*/
 .switch-button-container{
@@ -101,6 +103,7 @@ nav{
     width: 24px;
     height: 26px;
     border-radius:12px;
+    background-color: white;
 }
 /*
 There is an transition to be done to move the butto to the left when clicked
@@ -135,8 +138,109 @@ to{
     color: rgb(135, 132, 132);
     padding-top: 10%;
 }
-/*nav ends*/
-
+/*header ends*/
+/*main*/
+/*container-for-monthly*/
+.container-for-monthly{
+    display: block;
+    background-color: transparent;
+}
+/*This should display when clicked on*/
+.container-for-yearly{
+    display: block;
+    background-color: transparent;
+}
+.Price-tags{
+    padding: 6%;
+}
+ul{
+    padding-top: 13px;
+    color: #4c525a;
+    font-family: sans-serif;
+    font-size: 14.5px;
+}
+li{
+    list-style: none;
+    margin: 17px 0px 17px 0px;
+}
+.fa-check{
+    color: rgb(1, 178, 137);
+    font-size: medium;
+    margin-right: 9px;
+}
+.sub-container1-monthly,
+.sub-container2-monthly,
+.sub-container3-monthly,
+.sub-container1-yearly,
+.sub-container2-yearly,
+.sub-container3-yearly{
+    padding: 15% 5% 10% 7%;
+    border: 1px solid rgb(135, 132, 132);
+    border-radius: 5px;
+    background-color: #fbfcff;
+    margin: 20px 2px 34px 2px ;
+    box-shadow: 0px 0px 35px #e0dbdb;
+}
+/*.sub-container1-monthly*/
+.starter{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container1-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px;
+}
+/*price per month*/
+.sub-container1-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+/*line*/
+.green-underLine{
+    height: 2px;
+    background-color: rgb(1, 178, 137);
+    margin: 1% 0% 4% 0%;
+}
+.first-dollar-sign{
+    font-size:27px;
+    padding-top: 15%;
+    margin-right: 10px;
+}
+/*24*/
+.twentyFour{
+    font-size:70px;
+}
+.first-per-month{
+    padding-top: 25%;
+    font-size: 19px;
+    font-weight: 500;
+}
+/*sub-container1-button*/
+.sub-container1-button{
+    background-color: rgb(1, 178, 137);
+    padding: 10% 5% 10% 5%;
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    border: transparent;
+    margin-top: 48px;
+}
+/*.sub-container1-monthly ends*/
+/*.sub-container2-monthly*/
+.Professional{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+/*.sub-container2-monthly ends*/
 
 
 
