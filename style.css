@@ -405,6 +405,25 @@ hr{
     overflow: hidden;
     transition: 0.5s;
 }
+/*main ends*/
+/*footer*/
+footer{
+    margin: 2px;
+    padding: 30px 10px 90px 30px;
+    font-family: sans-serif;
+    color: #4c525a;
+}
+.pBR{
+    color: #4c525a;
+    font-size: 14.5px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+.pBR .pricing{
+    margin-bottom: 6px;
+    color: rgb(6, 186, 144);
+}
+/*footer ends*/
 
 
 
