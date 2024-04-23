@@ -16,6 +16,7 @@ nav{
     justify-content: space-between;
     padding: 5% 0% 5% 9%;
     background-color: white;
+    z-index: 99;
 }
 .devider{
     height: 110px;
@@ -286,9 +287,7 @@ a{
 }
 /*section1 ends*/
 /*section2*/
-.adsOn-and-faq{
-    
-}
+
 .ads-on{
     color: #4c525a;
     font-family: sans-serif;
@@ -338,8 +337,74 @@ a{
     margin: 30px 0px 30px 0px;
     padding: 20px 3px 20px 3px;
 }
+.mini-ad{
+    padding: 2% 20% 14% 20%;
+    background-color: #f2faff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 11px;
+}
+.your{
+    color: rgb(1, 178, 137);
+}
+.mini-ad h4{
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: -11px;
+}
+.mini-ad button{
+    padding: 10% 13% 10% 13%;
+    background-color: #00af87;
+    color: white;
+    width: 80%;
+    border: transparent;
+    border-radius: 5px;
+}
+.faq{
+    margin: 50px 20px 30px 20px;
+    color: #4c525a;
+    padding: 5px 5px;
+    font-family: sans-serif;
+}
+.faq h1{
+    text-align: center;
+    color: #00af87;
+    margin: 20px 3px 70px 3px;
+}
+.faq .faqContainer {
+    margin: 10px 10px 20px 3px;
+}
+hr{
+    margin: 17px 2px;
+}
+.faq .question {
+    position: relative;
+    padding: 2px 0;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+/*this should be changed to proper dropdown icon*/
+.faq .question::before {
+    content: 'v';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
 
-
+.faq .answer {
+    position: relative;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+}
 
 
 
