@@ -899,7 +899,7 @@ header{
     height: 210px;
 }
 nav{
-    width: 61%;
+    width: 91%;
     display: flex;
     position: fixed;
     top: 0;
@@ -933,7 +933,7 @@ nav{
 }
 /*hamburger icon*/
 .hamburger-icon{
-    width: 8%;
+    width: 20%;
 }
 .hamburger-icon-content{
     display: none;
@@ -941,7 +941,7 @@ nav{
 .hamburger-button{
     margin: 2px;
     height: 34px;
-    width: 100%;
+    width: 42%;
     padding-top: 9%;
     padding-left: 4px;
 }
@@ -1118,7 +1118,7 @@ li{
     font-size:27px;
     position: relative;
     bottom: 23px;
-    margin-right:0px;
+    margin-right: 10px;
 }
 /*24*/
 .twentyFour{
@@ -1183,7 +1183,7 @@ li{
 }
 .pt3{
     display: flex;
-    justify-content:space-around ;
+    justify-content: space-around;
     padding: 5% 11% 0% 0%;
     margin-right: 4%;
     color: #4c525a;
@@ -1192,7 +1192,6 @@ li{
 }
 .seventy-nine{
     font-size:60px;
-    width: 42%;
 }
 /*sub-container3-monthly end*/
 a{
@@ -1223,23 +1222,16 @@ a{
     content: '>';
 }
 .ads-on h5{
-    font-size: 37px;
-    width: 13%;
+    font-size: 31px;
 }
 .ads-on .free{
-    font-size: 30px;
-    position: relative;
-    bottom: 30px;
-    width: 10%;
+    font-size: 19px;
 }
 .ads-on-price-tag{
-    padding-left: 0px;
-    position: relative;
-    left: 87%;
-    top: 70px;
+    padding-left: 7px;
 }
 .ads-on  h6{
-    font-size: larger;
+    font-size: medium;
     margin-top: 20px;
     margin-bottom:10px;
 }
@@ -1256,19 +1248,18 @@ a{
 }
 .adsOn-and-faq h4{
     text-align: center;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 35px;
     color: #4c525a;
     font-family: 'Amerigo-bt roman opt';
     font-weight: lighter;
-    margin: 40px 0px 20px 0px;
-    padding: 40px 3px 20px 3px;
+    margin: 30px 0px 30px 0px;
+    padding: 30px 3px 20px 3px;
 }
 .mini-ad{
-    display: flex;
-    padding: 2% 0% 14% 0%;
+    padding: 2% 20% 14% 20%;
     background-color: #f2faff;
-    margin: 90px 10px;
+    margin: 20px;
     text-align: center;
     border-radius: 11px;
 }
@@ -1281,14 +1272,12 @@ a{
     margin-bottom: -11px;
 }
 .mini-ad button{
-    padding: 2% 3% 2% 3%;
+    padding: 10% 13% 10% 13%;
     background-color: #00af87;
     color: white;
-    width: 10%;
+    width: 80%;
     border: transparent;
     border-radius: 5px;
-    height: 60px;
-    margin: 110px 9px 9px 20px;
 }
 .faq{
     margin: 50px 20px 30px 20px;
