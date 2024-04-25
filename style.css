@@ -1588,7 +1588,7 @@ li{
     border-radius: 5px;
     background-color: #fbfcff;
     margin: 20px 2px 34px 2px ;
-    box-shadow: 0px 0px 1px #e0dbdb;
+    box-shadow: 0px 0px 2px rgb(255, 254, 254)b;
 }
 /*.sub-container1-monthly*/
 .starter{
@@ -1609,7 +1609,7 @@ li{
     margin-right: 4%;
     color: #4c525a;
     font-family: sans-serif;
-    width: 40%;
+    width: 10%;
 }
 /*line*/
 .green-underLine{
@@ -1662,7 +1662,7 @@ li{
     margin-right: 4%;
     color: #4c525a;
     font-family: sans-serif;
-    width: 33%;
+    width: 100%;
 }
 .thirty-nine{
     font-size:70px;
@@ -1691,7 +1691,7 @@ li{
     margin-right: 4%;
     color: #4c525a;
     font-family: sans-serif;
-    width: 38%;
+    width: 100%;
 }
 .seventy-nine{
     font-size:60px;
