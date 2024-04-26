@@ -1413,17 +1413,21 @@ nav{
     display: none;
 }
 .start-button{
-    padding: 1%;
-    width: 90px;
+    padding: 10% 1% 10% 1%;
+    width: 120px;
     background-color: #00af87;
     color: white;
     border: transparent;
+    border-radius: 3px;
+    font-weight: 600;
 }.login-button{
-    padding: 1%;
+    padding: 10% 1% 10% 1%;
     width: 90px; 
     color: #00af87;
     border: 1px solid #00af87;
     background-color: white;
+    border-radius: 3px;
+    font-weight: 600;
 }
 /*bonsai*/
 .logoName{
@@ -1700,6 +1704,10 @@ li{
     font-family: sans-serif;
     width: 100%;
 }
+.sub-container1-button{
+    position: relative;
+    top: 70px;
+}
 .seventy-nine{
     font-size:60px;
 }
@@ -1855,7 +1863,7 @@ hr{
 footer{
     display: flex;
     margin: 2px;
-    padding: 30px 10px 90px 30px;
+    padding: 30px 140px 90px 140px;
     font-family: sans-serif;
     color: #4c525a;
     justify-content: space-between;
@@ -1882,40 +1890,519 @@ footer h5{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
 body{
-    background-color: rgb(216, 11, 131);
-    }
+        background-color: white;
+}
+/*header*/
+/*nav*/
+header{
+    height: 210px;
+}
+nav{
+    width: 97%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 2%  6% 1% 6%;
+    background-color: white;
+    z-index: 99;
+}
+.devider{
+    height: 230px;
+}
+/*logo*/
+.logo{
+    width: 16%;
+    display: flex;
+    padding-left: 3%;
+}
+.logoImg{
+    padding-top: 0px;
+    width: 25%;
+    position: relative;
+    bottom: 10px;
+}
+.hamburger-logo{
+    display: none;
+}
+.start-button{
+    padding: 10% 1% 10% 1%;
+    width: 120px;
+    background-color: #00af87;
+    color: white;
+    border: transparent;
+    border-radius: 3px;
+    font-weight: 600;
+}.login-button{
+    padding: 10% 1% 10% 1%;
+    width: 90px; 
+    color: #00af87;
+    border: 1px solid #00af87;
+    background-color: white;
+    border-radius: 3px;
+    font-weight: 600;
+    position: relative;
+    left: 40px;
+}
+/*bonsai*/
+.logoName{
+ font-size: 28px;
+ color: rgb(1, 178, 137);
+ font-weight: 600;
+ font-family: sans-serif;
+ margin-left: 6px;
+ padding-top: 0%;
+ letter-spacing: 1px;
+}
+/*hamburger icon*/
+.hamburger-icon{
+    width:80%;
+}
+.hamburger-icon-content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2% 5% 0% 5%;
+    font-family: sans-serif;
+    width: 80%;
+    position: relative;
+    left: 5%;
+}
+.hamburger-button{
+    margin: 2px;
+    height: 34px;
+    width: 42%;
+    padding-top: 9%;
+    padding-left: 4px;
+    display: none;
+}
+.iconline{
+    width: 65%;
+    background-color: rgb(79, 79, 79);
+    height: 2.5px;
+    margin-bottom: 7px;
+    border-radius: 2px;
+    display: none;
+}
+/*nav ends*/
+/*plans-pricing*/
+.plans-pricing{
+    font-family:"Amerigo-bt roman opt" sans-serif;
+    font-size: 38px;
+    color: rgb(79, 79, 79);
+    padding: 3% 0% 3% 22%;
+    margin-bottom: 12px;
+}
+/*two-months-free*/
+.two-months-free{
+    display: flex;
+    justify-self: flex-end;
+    padding:2% 2% 2% 0%;
+    margin: 5px;
+    color: rgb(6, 186, 144);
+    font-size:small;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    width: 30%;
+    position: relative;
+    left: 55%;
+    bottom: 134px;
+}
+/*last-header-text*/
+.last-header-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 2% 3% 10%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(82, 80, 80);
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+    width: 32%;
+    position: relative;
+    left: 43%;
+    bottom: 170px;
+}
+/*switch-button-contain*/
+.switch-button-container{
+    border: 2px solid rgb(1, 178, 137);
+    width: 18%;
+    height: 27px;
+    border-radius:14px;
+    background-color: rgb(1, 178, 137);
+}
+/*switch-button*/
+.switch-button{
+    width: 24px;
+    height: 26px;
+    border-radius:12px;
+    background-color: white;
+}
+/*
+There is an transition to be done to move the butto to the left when clicked
+.switch-button:active{
+    display: flex;
+    justify-self: flex-end;
+}
+@keyframes moveToLeft {
+    
+from{
+    transform: translateX(0);
+}
+to{
+    transform: translateX(-100px);
+}
+}
+  
+.switch-button{
+    transition: transform 0.3s ease;
+}
+  
+.move-left.clicked {
+    animation: moveToLeft 0.3s ease forwards;
+}*/
+  
+/*monthly*/
+.monthly{
+    padding-top: 10%;
+}
+/*yearly*/
+.yearly{
+    color: rgb(135, 132, 132);
+    padding-top: 10%;
+}
+/*header ends*/
+/*main*/
+/*container-for-monthly*/
+.container-for-monthly{
+    display: flex;
+    background-color: transparent;
+    gap: 3%;
+}
+/*This should display when clicked on*/
+.container-for-yearly{
+    display: none;
+    background-color: transparent;
+}
+.Price-tags{
+    padding:18% 4% 6% 4%;
+}
+ul{
+    padding-top: 13px;
+    color: #4c525a;
+    font-family: sans-serif;
+    font-size: 14.5px;
+}
+li{
+    list-style: none;
+    margin: 17px 0px 17px 0px;
+}
+.fa-check{
+    color: rgb(1, 178, 137);
+    font-size: medium;
+    margin-right: 9px;
+}
+.sub-container1-monthly br{
+    display: none;
+}
+.sub-container1-monthly,
+.sub-container2-monthly,
+.sub-container3-monthly,
+.sub-container1-yearly,
+.sub-container2-yearly,
+.sub-container3-yearly{
+    padding: 7% 5% 10% 4%;
+    border: 1px thin rgb(135, 132, 132);
+    border-radius: 5px;
+    background-color: #fbfcff;
+    margin: 20px 2px 34px 2px ;
+    box-shadow: 0px 0px 2px rgb(255, 254, 254)b;
+}
+/*.sub-container1-monthly*/
+.starter{
+    font-size: 23px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container1-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px;
+}
+/*price per month*/
+.pt1{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+    width: 10%;
+}
+/*line*/
+.green-underLine{
+    height: 2px;
+    background-color: rgb(1, 178, 137);
+    margin: 0% 0% 4% 0%;
+}
+.dollar-sign{
+    font-size:27px;
+    position: relative;
+    bottom: 23px;
+    margin-right: 10px;
+}
+/*24*/
+.twentyFour{
+    font-size:70px;
+}
+.per-month{
+    padding-top: 20%;
+    font-size: 19px;
+    font-weight: 500;
+}
+/*sub-container1-button*/
+.section1-button{
+    background-color: rgb(1, 178, 137);
+    padding: 8% 5% 8% 5%;
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    border: transparent;
+    margin-top: 34px;
+}
+/*.sub-container1-monthly ends*/
+/*.sub-container2-monthly*/
+
+.sub-container2-monthly br{
+    display: none;
+}
+.Professional{
+    font-size: 23px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.pt2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+    width: 100%;
+}
+.thirty-nine{
+    font-size:70px;
+}
+.sub-container2-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+/*.sub-container2-monthly ends*/
+/*sub-container3-monthly*/
+.business{
+    font-size: 23px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a; 
+}
+.sub-container3-heading1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+.pt3{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+    width: 100%;
+}
+.sub-container1-button{
+    position: relative;
+    top: 70px;
+}
+.seventy-nine{
+    font-size:60px;
+}
+/*sub-container3-monthly end*/
+a{
+    text-decoration: none;
+    color:  #4c525a;
+}
+/*section1 ends*/
+/*section2*/
+
+.ads-on{
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.ads-on div{
+    border: 2px solid transparent;
+    padding:1% 5% 3% 5%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 20px 40px 20px 40px;
+    box-shadow: 0px 0px 35px #e0dbdb;
+    display: block;
+}
+.ad3-link{
+    color:rgb(1, 178, 137) ;
+    padding: 40px 0px 40px 0px;
+}
+.ad3-link::after{
+    content: '>';
+}
+.ads-on h5{
+    font-size: 43px;
+}
+.ads-on .free{
+    font-size: 30px;
+}
+.ads-on-price-tag{
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 75px;
+    padding-right: 35px;
+}
+.ads-on  h6{
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+.ads-para{
+    font-size: 15.5px;
+    font-weight: -100;
+    line-height: 22px;
+    width: 70%;
+}
+.ads-para3{
+    margin-bottom: 15px;
+}
+.adsOn-and-faq br{
+    display: none;
+}
+.adsOn-and-faq h4{
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: #4c525a;
+    font-family: 'Amerigo-bt roman opt';
+    font-weight: lighter;
+    margin: 30px 0px 30px 0px;
+    padding: 30px 3px 20px 3px;
+}
+.mini-ad{
+    padding: 5% 2% 5% 5%;
+    background-color: #f2faff;
+    margin: 140px 40px 140px 40px;
+    text-align: center;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-around;
+}
+.your{
+    color: rgb(1, 178, 137);
+}
+.mini-ad h4{
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 3px;
+    width: 60%;
+    position: relative;
+    bottom: 10px;
+}
+.mini-ad button{
+    padding:1%;
+    background-color: #00af87;
+    color: white;
+    width: 22%;
+    border: transparent;
+    border-radius: 5px;
+    height: 50px;
+    position: relative;
+    top: 100px;
+    margin-left: 5%;
+}
+.faq{
+    margin: 40px 90px 30px 90px;
+    color: #4c525a;
+    padding: 5px 5px;
+    font-family: sans-serif;
+}
+.faq h1{
+    text-align: center;
+    color: #00af87;
+    margin: 18px 3px 70px 3px;
+    font-size: 31px;
+}
+.faq .faqContainer {
+    margin: 10px 10px 20px 3px;
+}
+hr{
+    margin: 17px 2px;
+}
+.faq .question {
+    position: relative;
+    padding: 2px 0;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+/*this should be changed to proper dropdown icon*/
+.faq .question::before {
+    content: 'v';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.faq .answer {
+    position: relative;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+/*main ends*/
+/*footer*/
+footer{
+    display: flex;
+    margin: 2px;
+    padding: 30px 140px 90px 140px;
+    font-family: sans-serif;
+    color: #4c525a;
+    justify-content: space-between;
+}
+footer li{
+    font-size: 15px;
+}
+.pBR{
+    color: #4c525a;
+    font-size: 14.5px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+.pBR .pricing{
+    margin-bottom: 6px;
+    color: rgb(6, 186, 144);
+}
+footer h5{
+    margin-bottom: 19px;
+}
+/*footer ends*/
 }
