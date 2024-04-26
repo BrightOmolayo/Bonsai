@@ -234,6 +234,13 @@ li{
     border: transparent;
     margin-top: 48px;
 }
+.sub-container1-button{
+    
+}
+.sub-container3-button{
+    position: relative;
+    top: 30px;
+}
 /*.sub-container1-monthly ends*/
 /*.sub-container2-monthly*/
 .Professional{
@@ -1635,7 +1642,7 @@ li{
 /*sub-container1-button*/
 .section1-button{
     background-color: rgb(1, 178, 137);
-    padding: 4% 5% 4% 5%;
+    padding: 8% 5% 8% 5%;
     color: white;
     width: 100%;
     font-family: sans-serif;
