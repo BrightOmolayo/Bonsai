@@ -2129,7 +2129,7 @@ nav{
     left: 0;
     transition: transform 0.9s ease-in-out;
 }
-.switch-button:hover{
+switch-button:hover{
  transform: translateX(40px);
 }
 /*

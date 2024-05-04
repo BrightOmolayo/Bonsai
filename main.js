@@ -1,8 +1,13 @@
-
-const accordion = document.getElementsByClassName('faqContainer')
-
-for (i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active')
+// switch button
+document.addEventListener('DOMContentLoaded', function () {
+  const switchbtn = document.getElementById('switchbutton')
+  const yc = document.getElementById('yearContainer')
+  switchbtn.addEventListener('click', function () {
+    switchbtn.style.transform = 'translateX(40px)'
+    if (yc.style.display === 'none') {
+      yc.style.display = 'block'
+    } else {
+      yc.style.display = 'none'
+    }
   })
-}
+})
