@@ -24,12 +24,18 @@ function changebtn () {
   }
 }
 
-const accordion = document.getElementsByClassName('faqContainer')
+// eslint-disable-next-line no-unused-vars
+function toggleSection (element) {
+  const content = element.nextElementSibling
 
-// eslint-disable-next-line no-undef
-for (i = 0; i < accordion.length; i++) {
-  // eslint-disable-next-line no-undef
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active')
+  // Close all other sections before opening the clicked one
+  const allSections = document.querySelectorAll('.accordion-answer')
+  allSections.forEach(function (section) {
+    if (section !== content && section.classList.contains('see')) {
+      section.classList.remove('see')
+    }
   })
+
+  // Toggle the 'show' class to display or hide the content
+  content.classList.toggle('see')
 }

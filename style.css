@@ -416,6 +416,18 @@ a{
     color: #00af87;
     margin: 20px 3px 70px 3px;
 }
+.faq{
+    margin: 40px 90px 30px 90px;
+    color: #4c525a;
+    padding: 5px 5px;
+    font-family: sans-serif;
+}
+.faq h1{
+    text-align: center;
+    color: #00af87;
+    margin: 18px 3px 70px 3px;
+    font-size: 31px;
+}
 .faq .faqContainer {
     margin: 10px 10px 20px 3px;
 }
@@ -439,17 +451,17 @@ hr{
     font-size: 20px;
     transform: translateY(-50%);
 }
-/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
 
-.faq .answer {
-    position: relative;
-    height: 0;
-    font-size: 20px;
-    text-align: justify;
-    width: 780px;
+.answer {
+    max-height: 0;
     overflow: hidden;
-    transition: 0.5s;
-}
+    transition: max-height 0.3s ease;
+  }
+  
+  .answer.see {
+      padding: 10px;
+    max-height: 200px; /* Adjust the max height as needed */
+  }
 /*main ends*/
 /*footer*/
 footer{
