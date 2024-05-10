@@ -1,28 +1,28 @@
-// eslint-disable-next-line no-unused-vars
-const switchButton = document.getElementById('switchbtn').addEventListener('click', slider)
+// // eslint-disable-next-line no-unused-vars
+// const switchButton = document.getElementById('switchbtn').addEventListener('click', slider)
 
-function slider () {
-  const year = document.getElementById('yearContainer')
+// // eslint-disable-next-line no-unused-vars
+// const changeButton = document.getElementById('switchbtn').addEventListener('click', changebtn)
 
-  if (year.style.display === 'none') {
-    year.style.display = 'block'
-  } else {
-    year.style.display = 'none'
-  }
-}
+// function slider () {
+//   const year = document.getElementById('yearContainer')
 
-// eslint-disable-next-line no-unused-vars
-const changeButton = document.getElementById('switchbtn').addEventListener('click', changebtn)
+//   if (year.style.display === 'none') {
+//     year.style.display = 'block'
+//   } else {
+//     year.style.display = 'none'
+//   }
+// }
 
-function changebtn () {
-  const month = document.getElementById('monthlyContainer')
+// function changebtn () {
+// const month = document.getElementById('monthlyContainer')
 
-  if (month.style.display === 'block') {
-    month.style.display = 'none'
-  } else {
-    month.style.display = 'block'
-  }
-}
+// if (month.style.display === 'block') {
+//   month.style.display = 'none'
+// } else {
+//   month.style.display = 'block'
+// }
+// }
 
 // eslint-disable-next-line no-unused-vars
 function toggleSection (element) {
@@ -38,4 +38,23 @@ function toggleSection (element) {
 
   // Toggle the 'show' class to display or hide the content
   content.classList.toggle('see')
+}
+
+const switchButton = document.getElementById('switchbtn')
+switchButton.addEventListener('change', btnswitch)
+function btnswitch () {
+  const year = document.getElementById('yearContainer')
+  const month = document.getElementById('monthlyContainer')
+
+  if (year.style.display === 'none') {
+    year.style.display = 'block'
+  } else {
+    year.style.display = 'none'
+  }
+
+  if (month.style.display === 'block') {
+    month.style.display = 'none'
+  } else {
+    month.style.display = 'block'
+  }
 }
