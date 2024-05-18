@@ -21,60 +21,60 @@
            <!--hamburger icon, built with three divs-->
            <div class="hamburger-icon" id="hambugerIcon" onclick="hamburgerIconFunction()">
                 <div class="hamburger-button">
-                   <div class="hambuger-icon-div-1 iconline"></div>
-                   <div class="hambuger-icon-div-2 iconline"></div>
-                   <div class="hambuger-icon-div-3 iconline"></div>
+                   <div class="hambuger-icon-div-1 iconline" id="iconline1"></div>
+                   <div class="hambuger-icon-div-2 iconline" id="iconline2"></div>
+                   <div class="hambuger-icon-div-3 iconline" id="iconline3"></div>
                 </div>
                 <!--hamburger icon content-->
-                <div class="hamburger-icon-content">
-                    <div class="hamburger-logo">
-                       <img src="./images/bonsai logo.jpg" alt="Bonsai Logo">
-                    </div>
-                    <div class="nav-links">
-                       <!--product div is a link to a ul -->
-                        <div class="product">
-                            <p class="productP">Product<i class="fa-solid fa-chevron-down"></i></p>
-                            <div class="productContent">
-                                <ul>
-                                   <li> <img src="./images/invoice-icon.svg" alt="Invoice-icon"></i> Invoice</li>
-                                   <li> <img src="./images/Proposals icon.svg" alt="Proposals icon"> Proposals</li>
-                                   <li> <img src="./images/contracts icon.svg" alt="Contracts icon">Contracts</li>
-                                   <li> <img src="./images/people-outline.svg" alt="People-outline icon"> Client CRM</li>
-                                   <li> <img src="./images/reader-outline.svg" alt="Reader-outline icon"> Forms $ Automation</li>
-                                   <li> <img src="./images/time tracking icon.svg" alt="Time tracking icon"> Time Tracking</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="line line1"></div>
-                        <!--templates div is a link to a ul -->
-                        <div class="templates">
-                            <p class="templatep">Templates<i class="fa-solid fa-chevron-down"></i></p>
-                            <div class="templatesContent">
-                                <ul>
-                                    <li> <img src="./images/contracts icon.svg" alt="Contracts icon"> Contracts Templates</li>
-                                    <li> <img src="./images/contracts icon.svg" alt="Contracts icon"> Proposals Templates</li>
-                                    <li> <img src="./images/invoice-icon.svg" alt="Invoice-icon"> Invoice Templates</li>
-                                    <li> <img src="./images/contracts icon.svg" alt="Contracts icon"> Agreement Templates</li>
-                                    <li> <img src="./images/Proposals icon.svg" alt="Proposals icon"> Qoutes Templates</li>
-                                    <li> <img src="./images/time tracking icon.svg" alt="Time tracking icon"> Scope Of Work Templates</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="line line2"></div>
-                        <div class="pricing"><a href="index.html">Pricing</a></div>
-                        <div class="line line3"></div>
-                        <div class="reviews"><a href="index.html">Reviews</a></div>
-                        <div class="line line4"></div>
-                    </div>
-                    <div class="nav-buttons">
-                    <div class="login-button-div">
-                        <button class="login-button"><a href="./login.html">LOG IN</a></button>
-                    </div>
-                    <a href="index.html" class="start-free-link">
-                        <button class="start-button">START FREE</button>
-                    </a>
-                 </div>
+            </div>
+            <div class="hamburger-icon-content" id="hambugerIconContent">
+                <div id="hamburger-logo">
+                   <img src="./images/bonsai logo.jpg" alt="Bonsai Logo" >
                 </div>
+                <div class="nav-links">
+                   <!--product div is a link to a ul -->
+                    <div class="product">
+                        <p class="productP question"   onclick="toggleSection(this)" id="product">Product<i class="fa-solid fa-chevron-down"></i></p>
+                        <div class="productContent .accordion-answer answer">
+                            <ul>
+                               <li> <div class="images"><img src="./images/invoice-icon.svg" alt="Invoice-icon"></div></i> Invoice</li>
+                               <li> <div class="images"><img src="./images/Proposals icon.svg" alt="Proposals icon"></div> Proposals</li>
+                               <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div>Contracts</li>
+                               <li> <div class="images"><img src="./images/people-outline.svg" alt="People-outline icon"> </div>Client CRM</li>
+                               <li> <div class="images"><img src="./images/reader-outline.svg" alt="Reader-outline icon"> </div>Forms $ Automation</li>
+                               <li> <div class="images"><img src="./images/time tracking icon.svg" alt="Time tracking icon"> </div>Time Tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line line1"></div>
+                    <!--templates div is a link to a ul -->
+                    <div class="templates">
+                        <p class="templatep question" id="template" onclick="toggleSection(this)">Templates<i class="fa-solid fa-chevron-down"></i></p>
+                        <div class="templatesContent answer">
+                            <ul>
+                                <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div> Contracts Templates</li>
+                                <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div> Proposals Templates</li>
+                                <li> <div class="images"><img src="./images/invoice-icon.svg" alt="Invoice-icon"></div> Invoice Templates</li>
+                                <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"> </div>Agreement Templates</li>
+                                <li> <div class="images"><img src="./images/Proposals icon.svg" alt="Proposals icon"> </div>Qoutes Templates</li>
+                                <li> <div class="images"><img src="./images/time tracking icon.svg" alt="Time tracking icon"></div> Scope Of Work Templates</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line line2"></div>
+                    <div class="pricing"><a href="index.html">Pricing</a></div>
+                    <div class="line line3"></div>
+                    <div class="reviews"><a href="index.html">Reviews</a></div>
+                    <div class="line line4"></div>
+                </div>
+                <div class="nav-buttons">
+                <div class="login-button-div">
+                    <button class="hambuger-login-button"><a href="./login.html">LOG IN</a></button>
+                </div>
+                <a href="index.html" class="start-free-link">
+                    <button class="hambuger-start-button" id="hambuger-login-button">START FREE</button>
+                </a>
+             </div>
             </div>
         </nav>
         <div class="devider"></div>
@@ -224,13 +224,10 @@
                         </p>
                     </div>
                     <div class="sub-container1-heading2 pt1">
-                        <h4>
-                            $
-                        </h4>
-                        <h2>
-                           17
+                        <h2 class="seventeen">
+                            <span class="dollar-sign"> $</span>17
                         </h2>
-                        <h5>
+                        <h5 class="per-month">
                             /MONTH
                         </h5>
                         <p>Billed yearly</p>
@@ -262,13 +259,10 @@
                         </p>
                     </div>
                     <div class="sub-container2-heading2 pt2">
-                        <h4>
-                            $
-                        </h4>
-                        <h2>
-                            32
+                        <h2 class="thirty-two">
+                            <span class="dollar-sign"> $</span>32
                         </h2>
-                        <h5>
+                        <h5 class="per-month">
                             /MONTH
                         </h5>
                         <p>Billed yearly</p>
@@ -303,13 +297,10 @@
                         </p>
                     </div>
                     <div class="sub-container3-heading2 pt3">
-                        <h4>
-                            $
-                        </h4>
-                        <h2>
-                            52
+                        <h2 class="fiftyTwo">
+                           <span class="dollar-sign">$</span> 52
                         </h2>
-                        <h5>
+                        <h5 class="per-month">
                             /MONTH
                         </h5> 
                         <p>Billed yearly</p>
@@ -372,22 +363,22 @@
                         Frequently Asked Questions
                     </h1>
                     <div class="faqContainer">
-                        <div class="question" onclick="toggleSection(this)">How does the free trial work?</div>
+                        <div class="question" onclick="toggleSection(this)">How does the free trial work? <i class="fa-solid fa-chevron-down"></i></div>
                         <div class="answer">When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.</div>
                         <hr>
                     </div>
                     <div class="faqContainer">
-                        <div class="question" onclick="toggleSection(this)">Can I change plans anytime?</div>
+                        <div class="question" onclick="toggleSection(this)">Can I change plans anytime? <i class="fa-solid fa-chevron-down"></i></div>
                         <div class="answer">Yes, you can from within your account. If you have already subscribed to a plan, or want to downgrade or upgrade your current one, you can do this by going to your "Settings" and "Subscription".</div>
                         <hr>
                     </div>
                     <div class="faqContainer">
-                        <div class="question" onclick="toggleSection(this)">How do I pause my Bonsai subscription?</div>
+                        <div class="question" onclick="toggleSection(this)">How do I pause my Bonsai subscription? <i class="fa-solid fa-chevron-down"></i></div>
                         <div class="answer">We totally understand that with the nature of freelancing, work ebbs and flows so you might not always need your Bonsai subscription to remain active! The good news is that you can cancel or pause your monthly subscription at any time without penalty. Once cancelled, you'll be able to continue logging in to access all your documents and even continue to use our free features, like Time Tracking! In order to cancel your subscription, login to your Bonsai account.</div>
                         <hr>
                     </div>
                     <div class="faqContainer">
-                        <div class="question" onclick="toggleSection(this)">What is your refund policy?</div>
+                        <div class="question" onclick="toggleSection(this)">What is your refund policy?<i class="fa-solid fa-chevron-down"></i></div>
                         <div class="answer">If you contact us within 2 weeks of being charged for your subscription, we will be happy to issue a refund for you!Beyond those 2 weeks, you will need to cancel or modify the subscription from the Subscriptions Tab in Settings to avoid future charges, but refunds will not be issued. This applies to both monthly and annual plans.</div>
                         <hr>
                     </div>
@@ -521,7 +512,7 @@
                 </ul>
             </div>
             <div>
-                <p>Comparisons<i class="fa-solid fa-chevron-down"></i></p>
+                <p>Comparisons<i class="fa-solid fa-chevron-downf"></i></p>
                 <ul>
                     <li><a href="./404page/errorpage.html">Freshbooks Alternatives</a></li>
                     <li><a href="./404page/errorpage.html">Quickbooks Alternatives</a></li>
