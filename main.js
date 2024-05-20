@@ -1,3 +1,36 @@
+// Initial state: both containers are visible
+let containersVisible = true
+
+// Toggle the visibility of containers
+function btnswitch () {
+  const year = document.getElementById('yearContainer')
+  const month = document.getElementById('monthlyContainer')
+  const viewportWidth = window.innerWidth
+
+  // Set the breakpoint value (1024 in this case)
+  const breakpoint = 1024
+
+  if (viewportWidth >= breakpoint) {
+    if (containersVisible) {
+      year.style.display = 'none'
+      month.style.display = 'flex' // Show monthly container
+    } else {
+      year.style.display = 'flex' // Show yearly container
+      month.style.display = 'none'
+    }
+
+    // Update the state
+    containersVisible = !containersVisible
+  }
+}
+
+// Add event listener to the switch button
+const switchButton = document.getElementById('switchbtn')
+switchButton.addEventListener('change', btnswitch)
+
+// Initial call to set container display based on viewport width
+btnswitch()
+
 // eslint-disable-next-line no-unused-vars
 function toggleSection (element) {
   const content = element.nextElementSibling
@@ -9,46 +42,9 @@ function toggleSection (element) {
       section.classList.remove('see')
     }
   })
-}
-const switchButton = document.getElementById('switchbtn')
-switchButton.addEventListener('change', btnswitch)
 
-let containersVisible = true // Initial state: both containers are visible
-
-function btnswitch () {
-  const year = document.getElementById('yearContainer')
-  const month = document.getElementById('monthlyContainer')
-
-  // Toggle the visibility of containers
-  if (containersVisible) {
-    year.style.display = 'none'
-    month.style.display = 'block' // Show monthly container
-  } else {
-    year.style.display = 'block' // Show yearly container
-    month.style.display = 'none'
-  }
-
-  // Update the state
-  containersVisible = !containersVisible
-
-  // Function to check viewport width and update container display
-  function updateContainerDisplay () {
-    const container = document.querySelector('.monthlyAndYearly')
-    const viewportWidth = window.innerWidth
-
-    // Set the breakpoint value (10024 in this case)
-    const breakpoint = 1024
-
-    if (viewportWidth >= breakpoint) {
-      container.style.display = 'flex' // Change to flex
-    }
-  }
-
-  // Initial call to set container display based on viewport width
-  updateContainerDisplay()
-
-  // Listen for window resize events
-  window.addEventListener('resize', updateContainerDisplay)
+  // Toggle the 'show' class to display or hide the content
+  content.classList.toggle('see')
 }
 
 // eslint-disable-next-line no-unused-vars

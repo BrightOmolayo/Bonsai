@@ -712,7 +712,7 @@ to{
     display: none;
     background-color: transparent;
 }
-.Price-tags{
+.price-tags{
     padding:0% 3% 6% 3%;
 }
 ul{
@@ -739,7 +739,7 @@ li{
 .sub-container1-yearly,
 .sub-container2-yearly,
 .sub-container3-yearly{
-    padding: 9% 5% 10% 4%;
+    padding: 9% 5% 10% 6%;
     border: 1px solid rgb(135, 132, 132);
     border-radius: 5px;
     background-color: #fbfcff;
@@ -1544,7 +1544,6 @@ nav{
     display: flex;
     border: 3px solid darkolivegreen;
 }
-
 .hamburger-button{
     margin: 2px;
     height: 34px;
@@ -1658,13 +1657,13 @@ nav{
 /*main*/
 /*container-for-monthly*/
 .container-for-monthly{
-    display: flex;
+    display: block;
     background-color: transparent;
     gap: 3%;
 }
 /*This should display when clicked on*/
 .container-for-yearly{
-    display: none;
+    display: block;
     background-color: transparent;
 }
 .Price-tags{
