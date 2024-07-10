@@ -56,6 +56,7 @@ function hamburgerIconFunction () {
   const iconline3 = document.getElementById('iconline3')
 
   content.style.left = '0' // Move to the left edge
+  console.log(content.style.display)
 
   // eslint-disable-next-line no-undef
   if (content.style.display === 'none') {
