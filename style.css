@@ -1147,13 +1147,14 @@ footer h5{
     .headerText{
         display: flex;
         justify-content: center;
-        margin-top: 300px;
+        margin-top: 160px;
         margin-bottom: 30px;
     }
     .plans-pricing{
-        width: 28%;
-        font-size: 73px;
+        width: 25%;
+        font-size: 40px;
         color: rgb(79, 79, 79);
+        font-family: 'proximanova';
     }
     .two-months-free{
         width: 20%;
@@ -1162,14 +1163,15 @@ footer h5{
         font-weight: 600;
         letter-spacing: 0.4px;
         position: relative;
-        bottom: 40px;
+        bottom: 30px;
     }
     .greenText{
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 43px;
-        font-size: 28px;
+        margin-bottom: 23px;
+        font-size: 14px;
         font-weight: light;
+        font-family: sans-serif;
     }
     .last-header-text{
         display: flex;
@@ -1181,21 +1183,21 @@ footer h5{
     
     .monthly{
         padding-top: 10%;
-        font-size: 30px;
+        font-size: 16px;
         font-family: sans-serif;
     }
     .yearly{
         color: rgb(135, 132, 132);
         padding-top: 10%;
-        font-size: 30px;
+        font-size: 16px;
         font-family: sans-serif;
     }
     /* swicth button */
     .switch {
         position: relative;
         display: inline-block;
-        width: 90px;
-        height: 55px;
+        width: 50px;
+        height: 27px;
         border-radius:30px;
         padding: 0.6px;
     }
@@ -1220,9 +1222,9 @@ footer h5{
     .slider::before {
         position: absolute;
         content: "";
-        height: 54px;
-        width: 54px;
-        left: 3px;
+        height: 24px;
+        width: 24px;
+        left: 1px;
         bottom: 2px;
         background-color: white;
         -webkit-transition: .4s;
@@ -1251,9 +1253,14 @@ footer h5{
     /*container-for-monthly*/
     .container-for-monthly{
         display: flex;
-        background-color: transparent;
         gap: 3%;
         justify-content: center;
+        /* margin: 0% 3%; */
+        /* box-shadow: 0px 0px 10px rgba(180, 178, 178, 0.5); */
+        background-color: rgba(251, 251, 251, 0.4);
+        padding: 1% 5%;
+        /* border-radius: 5%; */
+        border: transparent;
     }
     /*This should display when clicked on*/
     
@@ -1261,26 +1268,30 @@ footer h5{
         display: none;
         gap: 3%;
         justify-content: center;
-        display: none;
-        background-color: transparent;
+        /* margin: 0% 3%;
+        box-shadow: 0px 0px 10px rgba(180, 178, 178, 0.5); */
+        background-color: rgba(251, 251, 251, 0.3);
+        padding: 1% 5%;
+        /* border-radius: 5%; */
+        border: transparent;
     }
     .Price-tags{
-        margin:18% 0% 6% 0%;
-        border: 2px solid aqua;
+        padding:18% 6% 6% 6%;
+        box-shadow: 0px 0px 30px rgb(252, 247, 247);
     }
     ul{
         padding-top: 13px;
         color: #4c525a;
         font-family: sans-serif;
     }
-    li{
+    li {
         list-style: none;
         margin: 17px 0px 17px 0px;
-        font-size: 28px !important;
+        font-size: 18px !important;
     }
     .fa-check{
         color: rgb(1, 178, 137);
-        font-size: medium;
+        font-size: 15px;
         margin-right: 9px;
     }
     .sub-container1-monthly br{
@@ -1292,12 +1303,14 @@ footer h5{
     .sub-container1-yearly,
     .sub-container2-yearly,
     .sub-container3-yearly{
-        padding: 7% 5% 10% 4%;
+        border: 0.2px solid rgb(165, 163, 163);
+        padding: 5% 5% 3% 4%;
+        /* box-shadow: 0px 0px 30px rgb(252, 247, 247); */
+        margin: 3px 2px 34px 2px ;
+        /* 
         border: 1px thin rgb(135, 132, 132);
         border-radius: 5px;
-        background-color: #fbfcff;
-        margin: 90px 2px 34px 2px ;
-        box-shadow: 0px 0px 2px rgb(255, 254, 254)b;
+        background-color: #fbfcff; */
     }
     /*.sub-container1-monthly*/
     .starter{
@@ -1331,10 +1344,12 @@ footer h5{
         position: relative;
         bottom: 23px;
         margin-right: 10px;
+        font-family: sans-serif;
     }
     /*24*/
     .twentyFour{
-        font-size:70px;
+        font-size:60px;
+        font-family: sans-serif;
     }
     .per-month{
         padding-top: 20%;
