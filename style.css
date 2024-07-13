@@ -1287,7 +1287,7 @@ footer h5{
     li {
         list-style: none;
         margin: 17px 0px 17px 0px;
-        font-size: 18px !important;
+        font-size: 17px !important;
     }
     .fa-check{
         color: rgb(1, 178, 137);
@@ -1304,7 +1304,7 @@ footer h5{
     .sub-container2-yearly,
     .sub-container3-yearly{
         border: 0.2px solid rgb(165, 163, 163);
-        padding: 5% 5% 3% 4%;
+        padding: 5% 4% 3% 4%;
         /* box-shadow: 0px 0px 30px rgb(252, 247, 247); */
         margin: 3px 2px 34px 2px ;
         /* 
@@ -1337,24 +1337,30 @@ footer h5{
     .green-underLine{
         height: 2px;
         background-color: rgb(1, 178, 137);
-        margin: 0% 0% 4% 0%;
+        margin: 0.4% 0% 4% 0%;
     }
     .dollar-sign{
         font-size:27px;
         position: relative;
-        bottom: 23px;
+        bottom: 17px;
         margin-right: 10px;
         font-family: sans-serif;
+        font-weight: lighter;
     }
     /*24*/
+    .seventeen,
+    .thirty-two,
+    .fiftyTwo,
     .twentyFour{
-        font-size:60px;
+        font-size:54px;
         font-family: sans-serif;
     }
     .per-month{
-        padding-top: 20%;
+        padding-top: 18%;
         font-size: 19px;
         font-weight: 500;
+        position: relative;
+        right: 10%;
     }
     /*sub-container1-button*/
     .section1-button{
@@ -1389,7 +1395,7 @@ footer h5{
         width: 100%;
     }
     .thirty-nine{
-        font-size:70px;
+        font-size:58px;
     }
     .sub-container2-heading1 p{
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -1408,11 +1414,40 @@ footer h5{
         color: #4c525a;
         font-size: 12px; 
     }
+    .sub-container1-yearly,
+    .sub-container3-yearly{
+        width: 32%;
+    }
+    .sub-container1-yearly .sub-container1-heading2 .per-month {
+        padding-top: 7%;
+        font-size: 17px;
+        font-weight: 500;
+        position: relative;
+        left: 6%;
+    }
+    .sub-container2-yearly .sub-container2-heading2 .per-month {
+        padding-top: 7%;
+        font-size: 17px;
+        font-weight: 500;
+        position: relative;
+        left: 10%;
+    }
+    .sub-container3-yearly .sub-container3-heading2 .per-month {
+        padding-top: 7%;
+        font-size: 17px;
+        font-weight: 500;
+        position: relative;
+        left: 10%;
+    }
+    .Billed{
+        position: relative;
+        top: 45px;
+    }
     .pt1,
     .pt3{
         display: flex;
         justify-content: space-around;
-        padding: 5% 11% 0% 0%;
+        padding: 5% 2% 0% 0%;
         margin-right: 4%;
         color: #4c525a;
         font-family: sans-serif;
@@ -1420,10 +1455,19 @@ footer h5{
     }
     .sub-container1-button{
         position: relative;
-        top: 70px;
+        top: 130px;
+    }
+    .sub-container3-button{
+        position: relative;
+        top: 57px;
+        padding: 9.5% 5%;
+    }
+    .sub-container3-yearly .sub-container1-button {
+        position: relative;
+        top: 60px;
     }
     .seventy-nine{
-        font-size:60px;
+        font-size:58px;
     }
     /*sub-container3-monthly end*/
     a{
