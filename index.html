@@ -20,8 +20,8 @@
             <div class="nav-links">
                    <!--product div is a link to a ul -->
                     <div class="product">
-                        <p class="productP question"   onclick="toggleSection(this)" id="product">Product<i class="fa-solid fa-chevron-down productfa"></i></p>
-                        <div class="productContent .accordion-answer answer" style="display: none;">
+                        <p class="productP ">Product<i class="fa-solid fa-chevron-down productfa"></i></p>
+                        <div class="productContent" style="display: none;">
                             <ul>
                                <li> <div class="images"><img src="./images/invoice-icon.svg" alt="Invoice-icon"></div></i> Invoice</li>
                                <li> <div class="images"><img src="./images/Proposals icon.svg" alt="Proposals icon"></div> Proposals</li>
@@ -57,8 +57,56 @@
                 <button class="hambuger-login-button"><a href="./login.html">LOG IN</a></button>                           
                 <button class="hambuger-start-button">START FREE</button>
            </div>
-
+           <!--hamburger icon, built with three divs-->
+           <div class="hamburger-icon" id="hambugerIcon" onclick="hamburgerIconFunction()">
+            <div class="hamburger-button">
+               <div class="hambuger-icon-div-1 iconline" id="iconline1"></div>
+               <div class="hambuger-icon-div-2 iconline" id="iconline2"></div>
+               <div class="hambuger-icon-div-3 iconline" id="iconline3"></div>
+            </div>
+        </div>
         </nav>
+                    <!--hamburger icon content-->
+                    <div class="nav-links" id="hambugerIconContent" style="display: none;">
+                        <!--product div is a link to a ul -->
+                         <div class="product">
+                             <p class="productP question"   onclick="toggleSection(this)" id="product">Product<i class="fa-solid fa-chevron-down productfa"></i></p>
+                             <div class="productContent .accordion-answer answer" style="display: none;">
+                                 <ul>
+                                    <li> <div class="images"><img src="./images/invoice-icon.svg" alt="Invoice-icon"></div></i> Invoice</li>
+                                    <li> <div class="images"><img src="./images/Proposals icon.svg" alt="Proposals icon"></div> Proposals</li>
+                                    <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div>Contracts</li>
+                                    <li> <div class="images"><img src="./images/people-outline.svg" alt="People-outline icon"> </div>Client CRM</li>
+                                    <li> <div class="images"><img src="./images/reader-outline.svg" alt="Reader-outline icon"> </div>Forms $ Automation</li>
+                                    <li> <div class="images"><img src="./images/time tracking icon.svg" alt="Time tracking icon"> </div>Time Tracking</li>
+                                 </ul>
+                             </div>
+                         </div>
+                         <div class="line line1"></div>
+                         <!--templates div is a link to a ul -->
+                         <div class="templates">
+                             <p class="templatep question" id="template" onclick="toggleSection(this)">Templates<i class="fa-solid fa-chevron-down productfa"></i></p>
+                             <div class="templatesContent answer" style="display: none;">
+                                 <ul>
+                                     <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div> Contracts Templates</li>
+                                     <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div> Proposals Templates</li>
+                                     <li> <div class="images"><img src="./images/invoice-icon.svg" alt="Invoice-icon"></div> Invoice Templates</li>
+                                     <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"> </div>Agreement Templates</li>
+                                     <li> <div class="images"><img src="./images/Proposals icon.svg" alt="Proposals icon"> </div>Qoutes Templates</li>
+                                     <li> <div class="images"><img src="./images/time tracking icon.svg" alt="Time tracking icon"></div> Scope Of Work Templates</li>
+                                 </ul>
+                             </div>
+                         </div>
+                         <div class="line line2"></div>
+                         <div class="pricing"><a href="index.html">Pricing</a></div>
+                         <div class="line line3"></div>
+                         <div class="reviews"><a href="index.html">Reviews</a></div>
+                         <div class="line line4"></div>
+                         <div class="mobilenav-buttons">              
+                            <button class="hambuger-login-button">LOG IN</a></button>                           
+                            <button class="hambuger-start-button">START FREE</button>
+                       </div>
+                    </div>
         <div class="divider"></div>
         <div class="headerText">
             <div class="plans-pricing">
@@ -117,7 +165,7 @@
                             <li><i class="fa-solid fa-check"></i>Up to 5 Project Collaborators</li>
                         </ul>
                     </div>
-                    <button type="submit" class="sub-container1-button section1-button" >START FREE</button>
+                    <button type="submit" class="sub-container1-button section1-button" id="button1">START FREE</button>
                 </div>
                 <!--Container2 for monthly-->
                 <div class="sub-container2-monthly">
@@ -154,7 +202,7 @@
                             <li><i class="fa-solid fa-check"></i>Zapier Integration</li>
                         </ul>
                     </div>
-                    <button type="submit" class="sub-container2-button section1-button" > START FREE</button>
+                    <button type="submit" class="sub-container2-button section1-button" id="button2"> START FREE</button>
                 </div>
                 <!--Container3 for monthly-->
                 <div class="sub-container3-monthly">
@@ -190,7 +238,7 @@
                             <li><i class="fa-solid fa-check"></i>Tasks & Time Tracking</li>
                         </ul>
                     </div>
-                    <button type="submit" class="sub-container3-button section1-button"> START FREE</button>
+                    <button type="submit" class="sub-container3-button section1-button" id="button3"> START FREE</button>
                 </div>
             </div>
             <!--YEARLY-->
@@ -319,22 +367,30 @@
                     <h6>Collaborators</h6>
                     <p class="ads-para">Invite other users to specific <br>projects for limited access <br> and functionality.</p>
                 </div>
-                <div class="ad1">
-                    <h5 class="ads-on-price-tag">$9</h5>
-                    <p class="ads-on-price-tag">/MONTH</p>
-                    <h6>Partners</h6>
-                    <p class="ads-para">Invite other users for full <br> account access and  <br>company management.</p>
+                <div id="ad1">
+                    <section class="ad1div1">
+                        <h6>Partners</h6>
+                        <p class="ads-para">Invite other users for full <br> account access and  <br>company management.</p>
+                    </section>
+                    <section class="ad1div">
+                        <h5 class="ads-on-price-tag">$9</h5>
+                        <p class="ads-on-price-tag">/MONTH</p>
+                    </section>
                 </div>
-                <div class="ad3">
-                    <h5 class="ads-on-price-tag">$10</h5>
-                    <p class="ads-on-price-tag">/MONTH</p>
-                    <h6>Bonsai Tax</h6>
-                    <p class="ads-para ads-para3">Track expenses, identify write- <br>offs, and estimate quarterly taxes <br> easily.</p>
-                    <a href="index.html" class="ad3-link">LEARN MORE</a>
+                <div id="ad3">
+                    <section class="ad1div1">
+                        <h6>Bonsai Tax</h6>
+                        <p class="ads-para ads-para3">Track expenses, identify write- <br>offs, and estimate quarterly taxes <br> easily.</p>
+                        <a href="index.html" class="ad3-link">LEARN MORE</a>
+                    </section>
+                    <section class="ad1div">
+                        <h5 class="ads-on-price-tag">$10</h5>
+                        <p class="ads-on-price-tag">/MONTH</p>
+                    </section>
                 </div>
             </div>
             <div class="mini-ad">
-                <h4>It’s <span class="your">your</span> business.
+                <h4>It’s <span class="your">your</span> business.<br id="miniadbr">
                     We’re here to help it grow.</h4>
                 <button>
                     START FREE
@@ -411,8 +467,8 @@
             </div>
             <div>
                 <h5>Templates</h5>
-                <p>Invoice Templates<i class="fa-solid fa-chevron-down"></i></p>
-                <ul>
+                <p class="question" onclick="toggleSection(this)">Invoice Templates<i class="fa-solid fa-chevron-down"></i></p>
+                <ul class="answer">
                     <li><a href="./404page/errorpage.html">Invoice Generator</a></li>
                     <li><a href="./404page/errorpage.html">Blank Invoice Template</a></li>
                     <li><a href="./404page/errorpage.html">Consultant Invoice Template</a></li>
@@ -423,9 +479,9 @@
                     <li><a href="./404page/errorpage.html">Photography Invoice Template</a></li>
                     <li><a href="./404page/errorpage.html">Self Employed Invoice Template</a></li>
                 </ul>
-                <p>Proposal Templates <i class="fa-solid fa-chevron-down"></i>
+                <p class="question" onclick="toggleSection(this)">Proposal Templates <i class="fa-solid fa-chevron-down"></i>
                 </p>
-                <ul>
+                <ul class="answer">
                     <li><a href="./404page/errorpage.html">Website Proposal Template</a></li>
                     <li><a href="./404page/errorpage.html">Digital Marketing Proposal Template</a></li>
                     <li><a href="./404page/errorpage.html">Social Media Marketing Proposal</a></li>
@@ -433,8 +489,8 @@
                     <li><a href="./404page/errorpage.html">Freelance Proposal Template</a></li>
                     <li><a href="./404page/errorpage.html">SEO Proposal Template</a></li>
                 </ul>
-                <p>Contract Templates<i class="fa-solid fa-chevron-down"></i></p>
-                <ul>
+                <p class="question" onclick="toggleSection(this)">Contract Templates<i class="fa-solid fa-chevron-down"></i></p>
+                <ul class="answer">
                     <li><a href="./404page/errorpage.html">Online Contract</a></li>
                     <li><a href="./404page/errorpage.html">Graphic Design Contract</a></li>
                     <li><a href="./404page/errorpage.html">Freelance Contract Template</a></li>
@@ -445,16 +501,16 @@
                     <li><a href="./404page/errorpage.html">Public Relations Contract</a></li>
                     <li><a href="./404page/errorpage.html">Translation Contract</a></li>
                 </ul>
-                <p>Agreement Templates<i class="fa-solid fa-chevron-down"></i></p>
-                <ul>
+                <p class="question" onclick="toggleSection(this)">Agreement Templates<i class="fa-solid fa-chevron-down"></i></p>
+                <ul class="answer">
                     <li><a href="./404page/errorpage.html">Retainer Agreement Template</a></li>
                     <li><a href="./404page/errorpage.html">Influencer Agreement Template</a></li>
                     <li><a href="./404page/errorpage.html">Collaboration Agreement Template</a></li>
                     <li><a href="./404page/errorpage.html">Software Development Agreement</a></li>
                     <li><a href="./404page/errorpage.html">Marketing Agreement Template</a></li>
                 </ul>
-                <p>Scope of Work Templates<i class="fa-solid fa-chevron-down pokenose"></i></p>
-                <ul>
+                <p class="question" onclick="toggleSection(this)">Scope of Work Templates<i class="fa-solid fa-chevron-down pokenose"></i></p>
+                <ul class="answer">
                     <li><a href="./404page/errorpage.html">Website Development Scope of Work</a></li>
                     <li><a href="./404page/errorpage.html">Digital Marketing Scope of Work</a></li>
                     <li><a href="./404page/errorpage.html">Consultant Statement of Work Template</a></li>

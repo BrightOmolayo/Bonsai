@@ -487,7 +487,7 @@ hr{
     font-weight: 600;
 }
 /*this should be changed to proper dropdown icon*/
-.faq .question::before {
+/* .faq .question::before {
     content: 'v';
     color: black;
     position: absolute;
@@ -495,7 +495,7 @@ hr{
     right: -5px;
     font-size: 20px;
     transform: translateY(-50%);
-}
+} */
 /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
 
 .faq .answer {
@@ -508,6 +508,7 @@ hr{
     transition: 0.5s;
 }
 /*main ends*/
+
 /*footer*/
 footer{
     display: flex;
@@ -532,6 +533,24 @@ footer li{
 }
 footer h5{
     margin-bottom: 19px;
+}
+.faq .fa-chevron-down {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 18px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 13px;
+}
+  
+.answer.see {
+    padding-bottom: 90px;
+    max-height: 800px; /* Adjust the max height as needed */
 }
 @media (min-width : 1441px) and (max-width : 2000px){
     header{
@@ -1032,6 +1051,24 @@ footer h5{
         overflow: hidden;
         transition: 0.5s;
     }
+    .faq .fa-chevron-down {
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        font-size: 18px;
+    }
+    
+    .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        font-size: 13px;
+    }
+      
+    .answer.see {
+        padding-bottom: 90px;
+        max-height: 800px; /* Adjust the max height as needed */
+    }
     /*main ends*/
     /*footer*/
     footer{
@@ -1059,7 +1096,7 @@ footer h5{
         margin-bottom: 19px;
     }
 }
-@media (min-width : 1024px) and (max-width : 1440px){
+@media (min-width : 1025px) and (max-width : 1440px){
     nav{
         display: flex;
         justify-content: space-between;
@@ -1455,11 +1492,11 @@ footer h5{
     }
     .sub-container1-button{
         position: relative;
-        top: 130px;
+        top: 120px;
     }
     .sub-container3-button{
         position: relative;
-        top: 57px;
+        top: 40px;
         padding: 9.5% 5%;
     }
     .sub-container3-yearly .sub-container1-button {
@@ -1483,12 +1520,13 @@ footer h5{
     }
     .ads-on div{
         border: 2px solid transparent;
-        padding:1% 5% 3% 5%;
-        border-radius: 5px;
+        padding:1% 5% 2% 2%;
+        border-radius: 10px;
         background-color: #ffffff;
-        margin: 20px 40px 20px 40px;
+        margin: 20px 90px 20px 90px;
         box-shadow: 0px 0px 35px #e0dbdb;
         display: block;
+        font-family: sans-serif;
     }
     .ad3-link{
         color:rgb(1, 178, 137) ;
@@ -1498,29 +1536,48 @@ footer h5{
         content: '>';
     }
     .ads-on h5{
-        font-size: 43px;
+        font-size: 37px;
     }
     .ads-on .free{
-        font-size: 30px;
+        font-size: 25px;
     }
     .ads-on-price-tag{
         padding-left: 0px;
         display: flex;
         justify-content: flex-end;
         position: relative;
-        top: 75px;
+        top: 35px;
         padding-right: 35px;
     }
+    #ad1,
+    #ad3{
+        display: flex;
+        justify-content: space-between;
+    }
+    #ad1 .ads-para br{
+        display: none;
+    }
+    .ad1 .ads-on-price-tag{
+        display: block;
+    }
+    .ad1div1,
+    .ad1div{
+        background-color: transparent;
+    }
+    .ad1div1{
+        width: 50%;
+    }
+    .ads-on-price-tag 
     .ads-on  h6{
         font-size: 21px;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom:10px;
     }
     .ads-para{
         font-size: 15.5px;
         font-weight: -100;
         line-height: 22px;
-        width: 70%;
+        width: 100%;
     }
     .ads-para3{
         margin-bottom: 15px;
@@ -1539,9 +1596,9 @@ footer h5{
         padding: 30px 3px 20px 3px;
     }
     .mini-ad{
-        padding: 5% 2% 5% 5%;
+        padding: 2% 2% 2% 0%;
         background-color: #f2faff;
-        margin: 140px 40px 140px 40px;
+        margin: 140px 150px 140px 150px;
         text-align: center;
         border-radius: 11px;
         display: flex;
@@ -1554,27 +1611,29 @@ footer h5{
         font-size: 44px;
         line-height: 50px;
         margin-bottom: 3px;
-        width: 60%;
+        width: 55%;
         position: relative;
         bottom: 10px;
+        text-align: left;
     }
     .mini-ad button{
         padding:1%;
         background-color: #00af87;
         color: white;
-        width: 22%;
+        width: 15%;
         border: transparent;
         border-radius: 5px;
         height: 50px;
         position: relative;
-        top: 100px;
+        top: 75px;
         margin-left: 5%;
     }
     .faq{
-        margin: 40px 90px 30px 90px;
+        margin: 40px 90px 30px 300px;
         color: #4c525a;
         padding: 5px 5px;
         font-family: sans-serif;
+        width: 50%;
     }
     .faq h1{
         text-align: center;
@@ -1587,6 +1646,7 @@ footer h5{
     }
     hr{
         margin: 17px 2px;
+        display: none;
     }
     .faq .question {
         position: relative;
@@ -1595,15 +1655,8 @@ footer h5{
         cursor: pointer;
         font-weight: 600;
     }
-    /*this should be changed to proper dropdown icon*/
-    .faq .question::before {
-        content: 'v';
-        color: black;
-        position: absolute;
-        top: 50%;
-        right: -5px;
-        font-size: 20px;
-        transform: translateY(-50%);
+    .question:hover{
+        color: #00af87;
     }
     /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
     
@@ -1621,7 +1674,7 @@ footer h5{
     footer{
         display: flex;
         margin: 2px;
-        padding: 30px 140px 90px 140px;
+        padding: 90px 140px 90px 140px;
         font-family: sans-serif;
         color: #4c525a;
         justify-content: space-between;
@@ -1642,8 +1695,1712 @@ footer h5{
     footer h5{
         margin-bottom: 19px;
     }
+    .faq .fa-chevron-down {
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        font-size: 18px;
+    }
+    
+    .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        font-size: 13px;
+    }
+      
+    .answer.see {
+        padding-bottom: 90px;
+        padding-top: 20px;
+        max-height: 800px; /* Adjust the max height as needed */
+    }
+    #miniadbr{
+        display: block;
+    }
 }
-@media (min-width : 768px) and (max-width : 1025px){}
-@media (min-width : 480px) and (max-width : 769px){}
-@media (min-width : 320px) and (max-width : 481px){}
-@media (max-width : 319px){}
+@media (min-width : 769px) and (max-width : 1024px){}
+@media (min-width : 481px) and (max-width : 768px){
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 27px;
+        border-radius:30px;
+        padding: 1px;
+    }
+      
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(1, 178, 137);
+        -webkit-transition: .4s;
+        transition: .6s;
+    }
+      
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 25px;
+        left: 2px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+      input:checked + .slider {
+        background-color: rgb(1, 178, 137);
+    }
+      
+      
+    input:checked + .slider:before {
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+      /* Rounded sliders */
+    .slider.round {
+        border-radius: 32px;
+    }
+      
+    .slider.round:before {
+        border-radius: 50%;
+    }  
+    /*logo*/
+.logo{
+    width: 53%;
+    display: flex;
+}
+.logoImg{
+    width: 30%;
+}
+/*bonsai*/
+.logoName{
+ font-size: 30px;
+ color: rgb(1, 178, 137);
+ font-weight: 600;
+ font-family: 'proximanova,  sans-serif';
+ margin-left: 4px;
+ padding-top: 6%;
+}
+/*hamburger icon*/
+.hamburger-icon{
+    width: 30%;
+    z-index: 99;
+}
+
+.line{
+    height: 0.5px;
+    background-color: black;
+    margin: 3% 0% 6% 0%;
+}
+.hambuger-start-button{
+    background-color: #00af87;
+    color: white;
+    border: none;
+}
+
+.hambuger-login-button,
+.hambuger-start-button{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+
+}
+.hambuger-login-button{
+    border: 0.5px solid #00af87;
+    background-color: white;
+} 
+.hambuger-login-button a{
+    color: #00af87;
+}
+.hamburger-icon-content{
+    display: block;
+    width: 80%;
+    background-color: white;
+    transition: 3.1s ease-in-out;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: -790px;
+    padding: 10%;
+    font-family: 'proximanova';
+}
+#product,
+#template{
+    font-size: 16px;
+    color: #4c525a;
+}
+
+.hamburger-button{
+    margin: 2px;
+    height: 30px;
+    width: 60%;
+    padding-top: 9%;
+}
+.iconline{
+    width: 65%;
+    background-color: rgb(79, 79, 79);
+    height: 2px;
+    margin-top: 6px;
+    border-radius: 3px;
+}
+.productContent .images{
+    width: 10%;
+}
+.templatesContent .images{
+    width: 10%;
+}
+
+#hamburger-logo{
+    width: 14%;
+    position: relative;
+    bottom: 25px;
+}
+
+/*nav ends*/
+/*plans-pricing*/
+.plans-pricing{
+    font-family:"Amerigo-bt roman opt" sans-serif;
+    font-size: 24px;
+    color: rgb(79, 79, 79);
+    padding: 3% 0% 3% 6%;
+    margin-bottom: 9px;
+}
+/*two-months-free*/
+.two-months-free{
+    display: flex;
+    justify-content: flex-end;
+    padding:2% 9% 2% 0%;
+    margin: 5px;
+    color: rgb(6, 186, 144);
+    font-size:small;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+/*last-header-text*/
+.last-header-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 12% 3% 10%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(82, 80, 80);
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+}
+/*switch-button-contain*/
+.switch-button-container{
+    border: 2px solid rgb(1, 178, 137);
+    width: 18%;
+    height: 27px;
+    border-radius:14px;
+    background-color: rgb(1, 178, 137);
+}
+/*switch-button*/
+.switch-button{
+    width: 24px;
+    height: 26px;
+    border-radius:12px;
+    background-color: white;
+}
+  
+/*monthly*/
+.monthly{
+    padding-top: 10%;
+}
+/*yearly*/
+.yearly{
+    color: rgb(135, 132, 132);
+    padding-top: 10%;
+}
+/*header ends*/
+/*main*/
+/*container-for-monthly*/
+#monthlyContainer{
+    display: block;
+    background-color: transparent;
+}
+/*This should display when clicked on*/
+#yearContainer{
+    display: none;
+    background-color: transparent;
+}
+.Price-tags{
+    padding: 6%;
+}
+ul{
+    padding-top: 13px;
+    color: #4c525a;
+    font-family: sans-serif;
+    font-size: 14.5px;
+}
+li{
+    list-style: none;
+    margin: 17px 0px 17px 0px;
+}
+.fa-check{
+    color: rgb(1, 178, 137);
+    font-size: medium;
+    margin-right: 9px;
+}
+.sub-container1-monthly,
+.sub-container2-monthly,
+.sub-container3-monthly,
+.sub-container1-yearly,
+.sub-container2-yearly,
+.sub-container3-yearly{
+    padding: 15% 5% 10% 7%;
+    border: 1px solid rgb(135, 132, 132);
+    border-radius: 5px;
+    background-color: #fbfcff;
+    margin: 20px 2px 34px 2px ;
+    box-shadow: 0px 0px 35px #e0dbdb;
+}
+/*.sub-container1-monthly*/
+.starter{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container1-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px;
+}
+/*price per month*/
+.sub-container1-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+/*line*/
+.green-underLine{
+    height: 2px;
+    background-color: rgb(1, 178, 137);
+    margin: 1% 0% 4% 0%;
+}
+.dollar-sign{
+    font-size:27px;
+    padding-top: 5%;
+    margin-right: 10px;
+}
+/*24*/
+.fiftyTwo,
+.seventeen,
+.fifty-two,
+.twentyFour{
+    font-size:70px;
+} 
+.fiftyTwo{
+    margin-left: 9px;
+    display: flex;
+}
+.per-month{
+    padding-top: 25%;
+    font-size: 19px;
+    font-weight: 500;
+}
+.container-for-yearly .per-month{
+    padding-top: 10%;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*sub-container1-button*/
+.section1-button{
+    background-color: rgb(1, 178, 137);
+    padding: 10% 5% 10% 5%;
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    border: transparent;
+    margin-top: 48px;
+}
+.sub-container3-button{
+    position: relative;
+    top: 30px;
+}
+/*.sub-container1-monthly ends*/
+/*.sub-container2-monthly*/
+.Professional{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container2-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.thirty-nine{
+    font-size:70px;
+}
+.sub-container2-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+/*.sub-container2-monthly ends*/
+/*sub-container3-monthly*/
+.business{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a; 
+}
+.sub-container3-heading1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+.sub-container3-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.thirty-two,
+.seventy-nine{
+    font-size:70px;
+}
+/*sub-container3-monthly end*/
+a{
+    text-decoration: none;
+    color:  #4c525a;
+}
+/*section1 ends*/
+/*section2*/
+
+.ads-on{
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.ads-on div{
+    border: 2px solid transparent;
+    padding:5% 5% 5% 12%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0px 0px 35px #e0dbdb;
+    display: block;
+}
+.ad3-link{
+    color:rgb(1, 178, 137) ;
+    padding: 40px 0px 40px 0px;
+}
+.ad3-link::after{
+    content: '>';
+}
+.ads-on h5{
+    font-size: 33px;
+}
+.free{
+    font-size: 21px;
+}
+.ads-on  h6{
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+.ads-para{
+    font-size: 14.5px;
+    font-weight: -100;
+    line-height: 22px;
+}
+.ads-para3{
+    margin-bottom: 15px;
+}
+.adsOn-and-faq h4{
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    color: #4c525a;
+    font-family: 'Amerigo-bt roman opt';
+    font-weight: lighter;
+    margin: 30px 0px 30px 0px;
+    padding: 20px 3px 20px 3px;
+}
+.mini-ad{
+    padding: 2% 20% 14% 20%;
+    background-color: #f2faff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 11px;
+}
+.your{
+    color: rgb(1, 178, 137);
+}
+.mini-ad h4{
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: -11px;
+}
+.mini-ad button{
+    padding: 10% 13% 10% 13%;
+    background-color: #00af87;
+    color: white;
+    width: 80%;
+    border: transparent;
+    border-radius: 5px;
+}
+.faq{
+    margin: 50px 20px 30px 20px;
+    color: #4c525a;
+    padding: 5px 5px;
+    font-family: sans-serif;
+    width: 80%;
+    position: relative;
+    left: 0%;
+    font-size: 28px;
+}
+.fa-chevron-downf{
+    display: none;
+}
+
+.faq h1{
+    text-align: center;
+    margin: 18px 3px 70px 3px;
+    font-size: 25px;
+    color: #00af87;
+}
+.faq .faqContainer {
+    margin: 10px 0px 20px 3px;
+}
+hr{
+    margin: 17px 2px;
+}
+.question {
+    position: relative;
+    padding: 2px 0;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav .fa-chevron-down{
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    font-size: 14px;
+}
+.fa-chevron-down {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 18px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 13px;
+}
+  
+.answer.see {
+    padding: 10px;
+    max-height: 800px; /* Adjust the max height as needed */
+}
+/*main ends*/
+/*footer*/
+footer{
+    margin: 2px;
+    padding: 30px 10px 90px 30px;
+    font-family: sans-serif;
+    color: #4c525a;
+}
+.pBR{
+    color: #4c525a;
+    font-size: 14.5px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+.pBR .pricing{
+    margin-bottom: 6px;
+    color: rgb(6, 186, 144);
+}
+}
+@media (min-width : 320px) and (max-width : 480px){
+    header{
+        background-image: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5% 6% 1% 6%;
+        background-color: white;
+        font-family: 'proximanova';
+    }
+    .hamburger-icon-content{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 4%;
+        margin-top: 1%;
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        color: #161616;
+    }
+    .nav-links a{
+        color: #161616;
+        text-decoration: none;
+    }
+    .nav-buttons{
+        display: none;
+    }
+    .mobilenav-buttons{
+        display: block;
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 0.5%;
+    }
+    .logo{
+        width: 17%;
+        display: flex;
+    }
+    .hamburger-logo{
+        display: none;
+    }
+    .logoName {
+        font-size: 43px;
+        color: rgb(1, 178, 137);
+        font-weight: 600;
+        font-family: sans-serif;
+        margin-left: 10px;
+        padding-top: 15px;
+        letter-spacing: 1.7px;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+    .hambuger-start-button{
+        padding: 2.5% 1% 2.5% 1%;
+        width: 90%;
+        background-color: #00af87;
+        color: white;
+        border: transparent;
+        border-radius: 6px;
+        font-size: 25px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .hambuger-login-button{
+        padding: 2.5% 1% 2.5% 1%;
+        width: 90%; 
+        border: 1px solid #00af87;
+        background-color: white;
+        border-radius: 6px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .hambuger-login-button a{
+        color: #00af87;
+        text-decoration: none;
+        font-family: sans-serif !important;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 27px;
+        border-radius:30px;
+        padding: 1px;
+    }
+      
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(1, 178, 137);
+        -webkit-transition: .4s;
+        transition: .6s;
+    }
+      
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 25px;
+        left: 2px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+      input:checked + .slider {
+        background-color: rgb(1, 178, 137);
+    }
+      
+      
+    input:checked + .slider:before {
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+      /* Rounded sliders */
+    .slider.round {
+        border-radius: 32px;
+    }
+      
+    .slider.round:before {
+        border-radius: 50%;
+    }  
+    /*logo*/
+.logo{
+    width: 53%;
+    display: flex;
+}
+.logoImg{
+    width: 30%;
+}
+/*bonsai*/
+.logoName{
+ font-size: 30px;
+ color: rgb(1, 178, 137);
+ font-weight: 600;
+ font-family: 'proximanova,  sans-serif';
+ margin-left: 4px;
+ padding-top: 6%;
+}
+/*hamburger icon*/
+.hamburger-icon{
+    width: 30%;
+    z-index: 99;
+    display: block;
+}
+
+.line{
+    height: 0.5px;
+    background-color: black;
+    margin: 3% 0% 6% 0%;
+}
+.hambuger-start-button{
+    background-color: #00af87;
+    color: white;
+    border: none;
+}
+
+.hambuger-login-button,
+.hambuger-start-button{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+
+}
+.hambuger-login-button{
+    border: 0.5px solid #00af87;
+    background-color: white;
+} 
+.hambuger-login-button a{
+    color: #00af87;
+}
+.hamburger-icon-content{
+    display: block;
+    width: 80%;
+    background-color: white;
+    transition: 3.1s ease-in-out;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: -790px;
+    padding: 10%;
+    font-family: 'proximanova';
+}
+#product,
+#template{
+    font-size: 16px;
+    color: #4c525a;
+}
+
+.hamburger-button{
+    margin: 2px;
+    height: 30px;
+    width: 60%;
+    padding-top: 9%;
+}
+.iconline{
+    width: 65%;
+    background-color: rgb(79, 79, 79);
+    height: 2px;
+    margin-top: 6px;
+    border-radius: 3px;
+}
+.productContent{
+    width: 80%;
+}
+.productContent li .images{
+    width: 20px;
+}
+.templatesContent li .images{
+    width: 20px;
+}
+
+#hamburger-logo{
+    width: 14%;
+    position: relative;
+    bottom: 25px;
+}
+
+/*nav ends*/
+/*plans-pricing*/
+.headerText{
+    display: block;
+    justify-content: center;
+    margin-top:53px;
+    margin-bottom: 30px;
+}
+.plans-pricing{
+    font-family:"Amerigo-bt roman opt" sans-serif;
+    font-size: 24px;
+    color: rgb(79, 79, 79);
+    padding: 3% 0% 3% 6%;
+    margin-bottom: 9px;
+    width: 50%;
+}
+/*two-months-free*/
+.two-months-free{
+    display: block;
+    justify-content: none;
+    padding: 0%;
+    margin: 2px;
+    color: rgb(6, 186, 144);
+    font-size:2px;
+    font-weight: 200;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    width: 95%;
+    margin-top: 10px;
+    position: relative;
+    top: 10px;
+}
+/*last-header-text*/
+.last-header-text{
+    display:flex;
+    justify-content: space-between;
+    padding: 3% 12% 3% 10%;
+    font-size: 8px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(82, 80, 80);
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+}
+/*switch-button-contain*/
+.switch-button-container{
+    border: 2px solid rgb(1, 178, 137);
+    width: 18%;
+    height: 27px;
+    border-radius:14px;
+    background-color: rgb(1, 178, 137);
+}
+/*switch-button*/
+.switch-button{
+    width: 44px;
+    height: 26px;
+    border-radius:12px;
+    background-color: white;
+}
+.greenText {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 13px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 10px;
+} 
+.monthly{
+    padding-top: 10%;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.yearly{
+    color: rgb(135, 132, 132);
+    padding-top: 10%;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+/*header ends*/
+/*main*/
+/*container-for-monthly*/
+#monthlyContainer{
+    display: block;
+    background-color: transparent;
+}
+/*This should display when clicked on*/
+#yearContainer{
+    display: none;
+    background-color: transparent;
+}
+.Price-tags{
+    padding: 6%;
+}
+ul{
+    padding-top: 13px;
+    color: #4c525a;
+    font-family: sans-serif;
+    font-size: 14.5px;
+}
+li{
+    list-style: none;
+    margin: 17px 0px 17px 0px;
+    font-size: 15px !important;
+    font-family: sans-serif;
+}
+.fa-check{
+    color: rgb(1, 178, 137);
+    font-size: medium;
+    margin-right: 9px;
+}
+.sub-container1-monthly,
+.sub-container2-monthly,
+.sub-container3-monthly,
+.sub-container1-yearly,
+.sub-container2-yearly,
+.sub-container3-yearly{
+    padding: 15% 5% 5% 7%;
+    border: 0.2px solid rgb(135, 132, 132);
+    border-radius: 5px;
+    background-color: #fbfcff;
+    margin: 20px 20px 34px 20px ;
+    box-shadow: 0px 0px 35px #ece9e9;
+    font-family: sans-serif;
+}
+/*.sub-container1-monthly*/
+.starter{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container1-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px;
+}
+/*price per month*/
+.sub-container1-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+/*line*/
+.green-underLine{
+    height: 2px;
+    background-color: rgb(1, 178, 137);
+    margin: 1% 0% 4% 0%;
+}
+.dollar-sign{
+    font-size:27px;
+    padding-top: 5%;
+    margin-right: 10px;
+    font-family: sans-serif;
+}
+/*24*/
+.fiftyTwo,
+.seventeen,
+.fifty-two,
+.twentyFour{
+    font-size:60px;
+    font-family: sans-serif;
+} 
+.fiftyTwo{
+    margin-left: 9px;
+    display: flex;
+}
+.per-month{
+    padding-top: 42px;
+    font-size: 23px;
+    font-weight: 500;
+    margin-left: 32px;
+    font-family: sans-serif;
+}
+.container-for-yearly .per-month{
+    padding-top: 10%;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*sub-container1-button*/
+.section1-button{
+    background-color: rgb(1, 178, 137);
+    padding: 10% 5% 10% 5%;
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    border: transparent;
+    margin-top: 0px;
+}
+#button1{
+   margin-bottom: 90px;
+}
+#button2{
+    margin: 50px 0px 30px 0px;
+}
+#button3{
+    margin: 30px 0px 50px 0px;   
+}
+.sub-container3-button{
+    position: relative;
+    top: 30px;
+}
+/*.sub-container1-monthly ends*/
+/*.sub-container2-monthly*/
+.Professional{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container2-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.thirty-nine{
+    font-size:70px;
+}
+.sub-container2-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+/*.sub-container2-monthly ends*/
+/*sub-container3-monthly*/
+.business{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a; 
+}
+.sub-container3-heading1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+.sub-container3-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.thirty-two,
+.seventy-nine{
+    font-size:70px;
+}
+/*sub-container3-monthly end*/
+a{
+    text-decoration: none;
+    color:  #4c525a;
+}
+/*section1 ends*/
+/*section2*/
+
+.ads-on{
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.ads-on div{
+    border: 2px solid transparent;
+    padding:5% 5% 5% 12%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0px 0px 35px #e0dbdb;
+    display: block;
+}
+.ad3-link{
+    color:rgb(1, 178, 137) ;
+    padding: 40px 0px 40px 0px;
+}
+.ad3-link::after{
+    content: '>';
+}
+.ads-on h5{
+    font-size: 33px;
+}
+.free{
+    font-size: 21px;
+}
+.ads-on  h6{
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+.ads-para{
+    font-size: 14.5px;
+    font-weight: -100;
+    line-height: 22px;
+}
+.ads-para3{
+    margin-bottom: 15px;
+}
+.adsOn-and-faq h4{
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    color: #4c525a;
+    font-family: 'Amerigo-bt roman opt';
+    font-weight: lighter;
+    margin: 30px 0px 30px 0px;
+    padding: 20px 3px 20px 3px;
+}
+.mini-ad{
+    padding: 2% 20% 14% 20%;
+    background-color: #f2faff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 11px;
+}
+.your{
+    color: rgb(1, 178, 137);
+}
+.mini-ad h4{
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: -11px;
+}
+.mini-ad button{
+    padding: 10% 13% 10% 13%;
+    background-color: #00af87;
+    color: white;
+    width: 80%;
+    border: transparent;
+    border-radius: 5px;
+}
+.faq{
+    margin: 50px 20px 30px 20px;
+    color: #4c525a;
+    padding: 5px 5px;
+    font-family: sans-serif;
+    width: 80%;
+    position: relative;
+    left: 0%;
+    font-size: 28px;
+}
+.fa-chevron-downf{
+    display: none;
+}
+
+.faq h1{
+    text-align: center;
+    margin: 18px 3px 70px 3px;
+    font-size: 25px;
+    color: #00af87;
+}
+.faq .faqContainer {
+    margin: 10px 0px 20px 3px;
+}
+hr{
+    margin: 17px 2px;
+}
+.question {
+    position: relative;
+    padding: 2px 0;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav .fa-chevron-down{
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    font-size: 14px;
+}
+.fa-chevron-down {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 18px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 13px;
+}
+  
+.answer.see {
+    padding: 10px;
+    max-height: 800px; /* Adjust the max height as needed */
+}
+/*main ends*/
+/*footer*/
+footer{
+    margin: 2px;
+    padding: 30px 10px 90px 30px;
+    font-family: sans-serif;
+    color: #4c525a;
+    display: block;
+}
+.pBR{
+    color: #4c525a;
+    font-size: 14.5px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+.pBR .pricing{
+    margin-bottom: 6px;
+    color: rgb(6, 186, 144);
+}
+}
+@media (max-width : 319px){
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 27px;
+        border-radius:30px;
+        padding: 1px;
+    }
+      
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(1, 178, 137);
+        -webkit-transition: .4s;
+        transition: .6s;
+    }
+      
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 25px;
+        left: 2px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+      input:checked + .slider {
+        background-color: rgb(1, 178, 137);
+    }
+      
+      
+    input:checked + .slider:before {
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+      /* Rounded sliders */
+    .slider.round {
+        border-radius: 32px;
+    }
+      
+    .slider.round:before {
+        border-radius: 50%;
+    }  
+    /*logo*/
+.logo{
+    width: 53%;
+    display: flex;
+}
+.logoImg{
+    width: 30%;
+}
+/*bonsai*/
+.logoName{
+ font-size: 30px;
+ color: rgb(1, 178, 137);
+ font-weight: 600;
+ font-family: 'proximanova,  sans-serif';
+ margin-left: 4px;
+ padding-top: 6%;
+}
+/*hamburger icon*/
+.hamburger-icon{
+    width: 30%;
+    z-index: 99;
+}
+
+.line{
+    height: 0.5px;
+    background-color: black;
+    margin: 3% 0% 6% 0%;
+}
+.hambuger-start-button{
+    background-color: #00af87;
+    color: white;
+    border: none;
+}
+
+.hambuger-login-button,
+.hambuger-start-button{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+
+}
+.hambuger-login-button{
+    border: 0.5px solid #00af87;
+    background-color: white;
+} 
+.hambuger-login-button a{
+    color: #00af87;
+}
+.hamburger-icon-content{
+    display: block;
+    width: 80%;
+    background-color: white;
+    transition: 3.1s ease-in-out;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: -790px;
+    padding: 10%;
+    font-family: 'proximanova';
+}
+#product,
+#template{
+    font-size: 16px;
+    color: #4c525a;
+}
+
+.hamburger-button{
+    margin: 2px;
+    height: 30px;
+    width: 60%;
+    padding-top: 9%;
+}
+.iconline{
+    width: 65%;
+    background-color: rgb(79, 79, 79);
+    height: 2px;
+    margin-top: 6px;
+    border-radius: 3px;
+}
+.productContent .images{
+    width: 10%;
+}
+.templatesContent .images{
+    width: 10%;
+}
+
+#hamburger-logo{
+    width: 14%;
+    position: relative;
+    bottom: 25px;
+}
+
+/*nav ends*/
+/*plans-pricing*/
+.plans-pricing{
+    font-family:"Amerigo-bt roman opt" sans-serif;
+    font-size: 24px;
+    color: rgb(79, 79, 79);
+    padding: 3% 0% 3% 6%;
+    margin-bottom: 9px;
+}
+/*two-months-free*/
+.two-months-free{
+    display: flex;
+    justify-content: flex-end;
+    padding:2% 9% 2% 0%;
+    margin: 5px;
+    color: rgb(6, 186, 144);
+    font-size:small;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+/*last-header-text*/
+.last-header-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 12% 3% 10%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(82, 80, 80);
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+}
+/*switch-button-contain*/
+.switch-button-container{
+    border: 2px solid rgb(1, 178, 137);
+    width: 18%;
+    height: 27px;
+    border-radius:14px;
+    background-color: rgb(1, 178, 137);
+}
+/*switch-button*/
+.switch-button{
+    width: 24px;
+    height: 26px;
+    border-radius:12px;
+    background-color: white;
+}
+  
+/*monthly*/
+.monthly{
+    padding-top: 10%;
+}
+/*yearly*/
+.yearly{
+    color: rgb(135, 132, 132);
+    padding-top: 10%;
+}
+/*header ends*/
+/*main*/
+/*container-for-monthly*/
+#monthlyContainer{
+    display: block;
+    background-color: transparent;
+}
+/*This should display when clicked on*/
+#yearContainer{
+    display: none;
+    background-color: transparent;
+}
+.Price-tags{
+    padding: 6%;
+}
+ul{
+    padding-top: 13px;
+    color: #4c525a;
+    font-family: sans-serif;
+    font-size: 14.5px;
+}
+li{
+    list-style: none;
+    margin: 17px 0px 17px 0px;
+}
+.fa-check{
+    color: rgb(1, 178, 137);
+    font-size: medium;
+    margin-right: 9px;
+}
+.sub-container1-monthly,
+.sub-container2-monthly,
+.sub-container3-monthly,
+.sub-container1-yearly,
+.sub-container2-yearly,
+.sub-container3-yearly{
+    padding: 15% 5% 10% 7%;
+    border: 1px solid rgb(135, 132, 132);
+    border-radius: 5px;
+    background-color: #fbfcff;
+    margin: 20px 2px 34px 2px ;
+    box-shadow: 0px 0px 35px #e0dbdb;
+}
+/*.sub-container1-monthly*/
+.starter{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container1-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px;
+}
+/*price per month*/
+.sub-container1-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+/*line*/
+.green-underLine{
+    height: 2px;
+    background-color: rgb(1, 178, 137);
+    margin: 1% 0% 4% 0%;
+}
+.dollar-sign{
+    font-size:27px;
+    padding-top: 5%;
+    margin-right: 10px;
+}
+/*24*/
+.fiftyTwo,
+.seventeen,
+.fifty-two,
+.twentyFour{
+    font-size:70px;
+} 
+.fiftyTwo{
+    margin-left: 9px;
+    display: flex;
+}
+.per-month{
+    padding-top: 25%;
+    font-size: 19px;
+    font-weight: 500;
+}
+.container-for-yearly .per-month{
+    padding-top: 10%;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*sub-container1-button*/
+.section1-button{
+    background-color: rgb(1, 178, 137);
+    padding: 10% 5% 10% 5%;
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    border: transparent;
+    margin-top: 48px;
+}
+.sub-container3-button{
+    position: relative;
+    top: 30px;
+}
+/*.sub-container1-monthly ends*/
+/*.sub-container2-monthly*/
+.Professional{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+}
+.sub-container2-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.thirty-nine{
+    font-size:70px;
+}
+.sub-container2-heading1 p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+/*.sub-container2-monthly ends*/
+/*sub-container3-monthly*/
+.business{
+    font-size: 21px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a; 
+}
+.sub-container3-heading1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4c525a;
+    font-size: 12px; 
+}
+.sub-container3-heading2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 11% 0% 0%;
+    margin-right: 4%;
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.thirty-two,
+.seventy-nine{
+    font-size:70px;
+}
+/*sub-container3-monthly end*/
+a{
+    text-decoration: none;
+    color:  #4c525a;
+}
+/*section1 ends*/
+/*section2*/
+
+.ads-on{
+    color: #4c525a;
+    font-family: sans-serif;
+}
+.ads-on div{
+    border: 2px solid transparent;
+    padding:5% 5% 5% 12%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0px 0px 35px #e0dbdb;
+    display: block;
+}
+.ad3-link{
+    color:rgb(1, 178, 137) ;
+    padding: 40px 0px 40px 0px;
+}
+.ad3-link::after{
+    content: '>';
+}
+.ads-on h5{
+    font-size: 33px;
+}
+.free{
+    font-size: 21px;
+}
+.ads-on  h6{
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+.ads-para{
+    font-size: 14.5px;
+    font-weight: -100;
+    line-height: 22px;
+}
+.ads-para3{
+    margin-bottom: 15px;
+}
+.adsOn-and-faq h4{
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    color: #4c525a;
+    font-family: 'Amerigo-bt roman opt';
+    font-weight: lighter;
+    margin: 30px 0px 30px 0px;
+    padding: 20px 3px 20px 3px;
+}
+.mini-ad{
+    padding: 2% 20% 14% 20%;
+    background-color: #f2faff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 11px;
+}
+.your{
+    color: rgb(1, 178, 137);
+}
+.mini-ad h4{
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: -11px;
+}
+.mini-ad button{
+    padding: 10% 13% 10% 13%;
+    background-color: #00af87;
+    color: white;
+    width: 80%;
+    border: transparent;
+    border-radius: 5px;
+}
+.faq{
+    margin: 50px 20px 30px 20px;
+    color: #4c525a;
+    padding: 5px 5px;
+    font-family: sans-serif;
+    width: 80%;
+    position: relative;
+    left: 0%;
+    font-size: 28px;
+}
+.fa-chevron-downf{
+    display: none;
+}
+
+.faq h1{
+    text-align: center;
+    margin: 18px 3px 70px 3px;
+    font-size: 25px;
+    color: #00af87;
+}
+.faq .faqContainer {
+    margin: 10px 0px 20px 3px;
+}
+hr{
+    margin: 17px 2px;
+}
+.question {
+    position: relative;
+    padding: 2px 0;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav .fa-chevron-down{
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    font-size: 14px;
+}
+.fa-chevron-down {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 18px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 13px;
+}
+  
+.answer.see {
+    padding: 10px;
+    max-height: 800px; /* Adjust the max height as needed */
+}
+/*main ends*/
+/*footer*/
+footer{
+    margin: 2px;
+    padding: 30px 10px 90px 30px;
+    font-family: sans-serif;
+    color: #4c525a;
+}
+.pBR{
+    color: #4c525a;
+    font-size: 14.5px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+.pBR .pricing{
+    margin-bottom: 6px;
+    color: rgb(6, 186, 144);
+}
+}
