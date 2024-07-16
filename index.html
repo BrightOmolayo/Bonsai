@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/2cbfcacb03.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="backgroundImage"></div>
     <header>
        <nav>
             <div class="logo">
@@ -71,7 +72,7 @@
                         <!--product div is a link to a ul -->
                          <div class="product">
                              <p class="productP question"   onclick="toggleSection(this)" id="product">Product<i class="fa-solid fa-chevron-down productfa"></i></p>
-                             <div class="productContent .accordion-answer answer" style="display: none;">
+                             <div class="productContent .accordion-answer answer">
                                  <ul>
                                     <li> <div class="images"><img src="./images/invoice-icon.svg" alt="Invoice-icon"></div></i> Invoice</li>
                                     <li> <div class="images"><img src="./images/Proposals icon.svg" alt="Proposals icon"></div> Proposals</li>
@@ -86,7 +87,7 @@
                          <!--templates div is a link to a ul -->
                          <div class="templates">
                              <p class="templatep question" id="template" onclick="toggleSection(this)">Templates<i class="fa-solid fa-chevron-down productfa"></i></p>
-                             <div class="templatesContent answer" style="display: none;">
+                             <div class="templatesContent answer">
                                  <ul>
                                      <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div> Contracts Templates</li>
                                      <li> <div class="images"><img src="./images/contracts icon.svg" alt="Contracts icon"></div> Proposals Templates</li>
@@ -368,22 +369,30 @@
                     <p class="ads-para">Invite other users to specific <br>projects for limited access <br> and functionality.</p>
                 </div>
                 <div id="ad1">
+                    <section class="ad1div formobile">
+                        <h5 class="ads-on-price-tag">$9</h5>
+                        <p class="ads-on-price-tag">/MONTH</p>
+                    </section>
                     <section class="ad1div1">
                         <h6>Partners</h6>
                         <p class="ads-para">Invite other users for full <br> account access and  <br>company management.</p>
                     </section>
-                    <section class="ad1div">
+                    <section class="ad1div fordesktop">
                         <h5 class="ads-on-price-tag">$9</h5>
                         <p class="ads-on-price-tag">/MONTH</p>
                     </section>
                 </div>
                 <div id="ad3">
+                    <section class="ad1div formobile">
+                        <h5 class="ads-on-price-tag">$10</h5>
+                        <p class="ads-on-price-tag">/MONTH</p>
+                    </section>
                     <section class="ad1div1">
                         <h6>Bonsai Tax</h6>
                         <p class="ads-para ads-para3">Track expenses, identify write- <br>offs, and estimate quarterly taxes <br> easily.</p>
                         <a href="index.html" class="ad3-link">LEARN MORE</a>
                     </section>
-                    <section class="ad1div">
+                    <section class="ad1div fordesktop">
                         <h5 class="ads-on-price-tag">$10</h5>
                         <p class="ads-on-price-tag">/MONTH</p>
                     </section>

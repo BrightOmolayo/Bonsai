@@ -547,6 +547,9 @@ footer h5{
     transition: max-height 0.3s ease;
     font-size: 13px;
 }
+.formobile{
+    display: none;
+}
   
 .answer.see {
     padding-bottom: 90px;
@@ -1720,6 +1723,155 @@ footer h5{
 }
 @media (min-width : 769px) and (max-width : 1024px){}
 @media (min-width : 481px) and (max-width : 768px){
+    header{
+        background-image: url("./images/bonsaiTabBGI.jpg");
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 6% 1% 10%;
+        background-color:transparent;
+        font-family: 'proximanova';
+        margin-bottom: 30px;
+    }
+    .formobile{
+        display: block;
+    }
+    .fordesktop{
+        display: none;
+    }
+    .hamburger-icon-content{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 4%;
+        margin-top: 1%;
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        color: #161616;
+        animation:  linear 1s  divNavMobileLinks;
+   
+    }
+    @keyframes divNavMobileLinks {
+        from {
+          position: relative;
+          left: 50%;
+        }
+        to {
+            position: relative;
+            right: 20%;
+        }
+      }
+    .nav-links a{
+        color: #161616;
+        text-decoration: none;
+        /* font-size: 15px; */
+        font-size: 17px;
+        color: #4c525a;
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+    .nav-buttons{
+        display: none;
+    }
+    .mobilenav-buttons{
+        display: block;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 0.5%;
+    }
+    .nav-links .fa-chevron-down{
+        font-size: 12px;
+        position: absolute;
+        left: 200px;
+        bottom: 16px;
+    }
+    .logo{
+        width: 17%;
+        display: flex;
+    }
+    .hamburger-logo{
+        display: block;
+        width: 12%;
+        margin-top: 10px;
+    }
+    .logoName {
+        color: rgb(1, 178, 137);
+        font-family: sans-serif;
+        margin-left: 14px;
+        letter-spacing: 1.7px;
+        font-size: 35px;
+        font-weight: 600;
+        /* font-family: 'proximanova,  sans-serif'; */
+        margin-left: 4px;
+        padding-top: 3%;
+    }
+    .logo{
+        width: 53%;
+        display: flex;
+    }
+    .logoImg{
+        width: 30%;
+    }
+    /* .productfa{
+        margin-left: 10px;
+        font-size: 25px;
+        position: relative;
+        right: 40px;
+    } */
+    /*hamburger icon*/
+    .hamburger-icon{
+        width: 12%;
+        z-index: 99;
+        display: block;
+        margin-top: 10px;
+    }
+    .hambuger-start-button{
+        padding: 2.5% 1% 2.5% 1%;
+        width: 90%;
+        background-color: #00af87;
+        color: white;
+        border: transparent;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .hambuger-login-button{
+        padding: 2.5% 1% 2.5% 1%;
+        width: 90%; 
+        border: 1px solid #00af87;
+        background-color: white;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #00af87;
+        font-family: sans-serif;
+    }
+    .hambuger-login-button a{
+        /* color: #00af87; */
+        text-decoration: none;
+        font-family: sans-serif !important;
+    }
+    .line {
+        height: 0.5px;
+        background-color: black;
+        margin: 2% 0% 1% 0%;
+    }
+    .hambuger-login-button,
+    .hambuger-start-button{
+        width: 100%;
+        padding: 12px 0px 12px 0px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+    
+    } 
+    .hambuger-login-button a{
+        color: #00af87;
+    }
     .switch {
         position: relative;
         display: inline-block;
@@ -1776,53 +1928,12 @@ footer h5{
         border-radius: 50%;
     }  
     /*logo*/
-.logo{
-    width: 53%;
-    display: flex;
-}
-.logoImg{
-    width: 30%;
-}
-/*bonsai*/
-.logoName{
- font-size: 30px;
- color: rgb(1, 178, 137);
- font-weight: 600;
- font-family: 'proximanova,  sans-serif';
- margin-left: 4px;
- padding-top: 6%;
-}
-/*hamburger icon*/
-.hamburger-icon{
-    width: 30%;
-    z-index: 99;
-}
+
 
 .line{
     height: 0.5px;
     background-color: black;
     margin: 3% 0% 6% 0%;
-}
-.hambuger-start-button{
-    background-color: #00af87;
-    color: white;
-    border: none;
-}
-
-.hambuger-login-button,
-.hambuger-start-button{
-    width: 100%;
-    padding: 10px 0px 10px 0px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-
-}
-.hambuger-login-button{
-    border: 0.5px solid #00af87;
-    background-color: white;
-} 
-.hambuger-login-button a{
-    color: #00af87;
 }
 .hamburger-icon-content{
     display: block;
@@ -1838,16 +1949,18 @@ footer h5{
 }
 #product,
 #template{
-    font-size: 16px;
+    font-size: 16.2px;
     color: #4c525a;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
-.hamburger-button{
+/* .hamburger-button{
     margin: 2px;
     height: 30px;
     width: 60%;
     padding-top: 9%;
-}
+} */
 .iconline{
     width: 65%;
     background-color: rgb(79, 79, 79);
@@ -1855,46 +1968,55 @@ footer h5{
     margin-top: 6px;
     border-radius: 3px;
 }
-.productContent .images{
-    width: 10%;
+.productContent{
+    width: 80%;
 }
-.templatesContent .images{
-    width: 10%;
+.productContent li .images{
+    width: 20px;
 }
-
-#hamburger-logo{
-    width: 14%;
+.templatesContent li .images{
+    width: 20px;
+}
+.headerText{
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+    margin-bottom: 0px;
     position: relative;
-    bottom: 25px;
+    bottom: 20px;
 }
-
-/*nav ends*/
-/*plans-pricing*/
 .plans-pricing{
     font-family:"Amerigo-bt roman opt" sans-serif;
-    font-size: 24px;
+    font-size: 38px;
     color: rgb(79, 79, 79);
-    padding: 3% 0% 3% 6%;
+    padding: 5% 0% 3% 14%;
     margin-bottom: 9px;
+    width: 54%;
 }
 /*two-months-free*/
 .two-months-free{
-    display: flex;
-    justify-content: flex-end;
-    padding:2% 9% 2% 0%;
-    margin: 5px;
+    display: block;
+    justify-content: none;
+    padding: 0%;
+    margin-right: 6%;
     color: rgb(6, 186, 144);
-    font-size:small;
-    font-weight: 600;
+    font-size:2px;
+    font-weight: 200;
     font-family: sans-serif;
     letter-spacing: 0.5px;
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 0px;
+
 }
 /*last-header-text*/
 .last-header-text{
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    padding: 3% 12% 3% 10%;
-    font-size: 18px;
+    padding: 3% 4% 3% 4%;
+    font-size: 8px;
     font-weight: 600;
     font-family: sans-serif;
     color: rgb(82, 80, 80);
@@ -1911,20 +2033,30 @@ footer h5{
 }
 /*switch-button*/
 .switch-button{
-    width: 24px;
+    width: 44px;
     height: 26px;
     border-radius:12px;
     background-color: white;
 }
-  
-/*monthly*/
+.greenText {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 13px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 10px;
+} 
 .monthly{
     padding-top: 10%;
+    font-size: 16px;
+    font-family: sans-serif;
 }
-/*yearly*/
 .yearly{
     color: rgb(135, 132, 132);
     padding-top: 10%;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 /*header ends*/
 /*main*/
@@ -1932,14 +2064,17 @@ footer h5{
 #monthlyContainer{
     display: block;
     background-color: transparent;
+    margin: 1% 4%;
 }
 /*This should display when clicked on*/
 #yearContainer{
     display: none;
     background-color: transparent;
+    margin: 1% 4%;
 }
 .Price-tags{
     padding: 6%;
+    margin: 0% 9%;
 }
 ul{
     padding-top: 13px;
@@ -1950,6 +2085,8 @@ ul{
 li{
     list-style: none;
     margin: 17px 0px 17px 0px;
+    font-size: 15px !important;
+    font-family: sans-serif;
 }
 .fa-check{
     color: rgb(1, 178, 137);
@@ -1962,12 +2099,13 @@ li{
 .sub-container1-yearly,
 .sub-container2-yearly,
 .sub-container3-yearly{
-    padding: 15% 5% 10% 7%;
-    border: 1px solid rgb(135, 132, 132);
+    padding: 8% 5% 5% 4%;
+    border: 0.2px solid rgb(135, 132, 132);
     border-radius: 5px;
     background-color: #fbfcff;
-    margin: 20px 2px 34px 2px ;
-    box-shadow: 0px 0px 35px #e0dbdb;
+    margin: 20px 20px 34px 20px ;
+    box-shadow: 0px 0px 35px #ece9e9;
+    font-family: sans-serif;
 }
 /*.sub-container1-monthly*/
 .starter{
@@ -1999,22 +2137,26 @@ li{
     font-size:27px;
     padding-top: 5%;
     margin-right: 10px;
+    font-family: sans-serif;
 }
 /*24*/
 .fiftyTwo,
 .seventeen,
 .fifty-two,
 .twentyFour{
-    font-size:70px;
+    font-size:60px;
+    font-family: sans-serif;
 } 
 .fiftyTwo{
     margin-left: 9px;
     display: flex;
 }
 .per-month{
-    padding-top: 25%;
-    font-size: 19px;
+    padding-top: 42px;
+    font-size: 23px;
     font-weight: 500;
+    margin-left: 32px;
+    font-family: sans-serif;
 }
 .container-for-yearly .per-month{
     padding-top: 10%;
@@ -2024,14 +2166,23 @@ li{
 /*sub-container1-button*/
 .section1-button{
     background-color: rgb(1, 178, 137);
-    padding: 10% 5% 10% 5%;
+    padding: 5%;
     color: white;
     width: 100%;
     font-family: sans-serif;
     font-weight: 600;
     border-radius: 4px;
     border: transparent;
-    margin-top: 48px;
+    margin-top: 0px;
+}
+#button1{
+   margin-bottom: 90px;
+}
+#button2{
+    margin: 50px 0px 30px 0px;
+}
+#button3{
+    margin: 30px 0px 50px 0px;   
 }
 .sub-container3-button{
     position: relative;
@@ -2098,7 +2249,7 @@ a{
 }
 .ads-on div{
     border: 2px solid transparent;
-    padding:5% 5% 5% 12%;
+    padding:0% 5% 3% 12%;
     border-radius: 5px;
     background-color: #ffffff;
     margin: 20px;
@@ -2133,62 +2284,111 @@ a{
 }
 .adsOn-and-faq h4{
     text-align: center;
-    font-size: 24px;
+    font-size: 34px;
     line-height: 35px;
     color: #4c525a;
     font-family: 'Amerigo-bt roman opt';
     font-weight: lighter;
-    margin: 30px 0px 30px 0px;
+    margin: 90px 0px 30px 0px;
     padding: 20px 3px 20px 3px;
 }
-.mini-ad{
-    padding: 2% 20% 14% 20%;
+.ads-on-price-tag {
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 40px;
+    padding-right: 35px;
+    bottom: 0px;
+}
+/* .ads-on-price-tag {
+    padding-left: 0px;
+    display: block;
+    justify-content: flex-end;
+    position: relative;
+    top: 0px;
+    padding-right: 35px;
+    bottom: 80px;
+} */
+/* .mini-ad{
+    padding: 2% 7% 14% 20%;
     background-color: #f2faff;
     margin: 20px;
     text-align: center;
     border-radius: 11px;
+    display: block;
+} */
+.mini-ad{
+    padding: 2% 2% 2% 1.6%;
+    background-color: #f2faff;
+    margin: 140px 40px 140px 40px;
+    text-align: center;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-around;
 }
 .your{
     color: rgb(1, 178, 137);
 }
 .mini-ad h4{
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 46px;
+    line-height: 51px;
     margin-bottom: -11px;
+    width: 57%;
+    margin-top: 30px;
 }
 .mini-ad button{
-    padding: 10% 13% 10% 13%;
+    padding:2%;
     background-color: #00af87;
     color: white;
-    width: 80%;
+    width: 20%;
     border: transparent;
     border-radius: 5px;
+    height: 50px;
+    position: relative;
+    top: 90px;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    margin-right: 0px;
 }
 .faq{
-    margin: 50px 20px 30px 20px;
+    margin: 50px 20px 30px 90px;
     color: #4c525a;
     padding: 5px 5px;
     font-family: sans-serif;
-    width: 80%;
+    width: 74%;
     position: relative;
     left: 0%;
-    font-size: 28px;
+    font-size: 38px;
 }
 .fa-chevron-downf{
     display: none;
 }
-
+.faq .fa-chevron-down{
+    opacity: 0.4;
+    font-size: 20px;
+    position: absolute;
+    bottom: 60px;
+}
 .faq h1{
     text-align: center;
-    margin: 18px 3px 70px 3px;
-    font-size: 25px;
+    margin: 18px 3px 45px 3px;
+    font-size: 31px;
     color: #00af87;
+    font-family: sans-serif;
 }
 .faq .faqContainer {
     margin: 10px 0px 20px 3px;
 }
 hr{
     margin: 17px 2px;
+    display: none;
+}
+.faq .question {
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: sans-serif;
 }
 .question {
     position: relative;
@@ -2217,17 +2417,27 @@ nav .fa-chevron-down{
     font-size: 13px;
 }
   
-.answer.see {
-    padding: 10px;
+.faq .answer.see {
+    padding-bottom: 180px;
+    width: 280px;
+    font-size: 14px;
+    max-height: 800px; /* Adjust the max height as needed */
+}
+.faq .answer.see {
+    padding-top: 10px;
+    padding-bottom: 150px;
+    width: 280px;
+    font-size: 14px;
     max-height: 800px; /* Adjust the max height as needed */
 }
 /*main ends*/
 /*footer*/
 footer{
     margin: 2px;
-    padding: 30px 10px 90px 30px;
+    padding: 80px 10px 90px 30px;
     font-family: sans-serif;
     color: #4c525a;
+    display: flex;
 }
 .pBR{
     color: #4c525a;
@@ -2238,6 +2448,17 @@ footer{
 .pBR .pricing{
     margin-bottom: 6px;
     color: rgb(6, 186, 144);
+}
+footer .question{
+    font-size: medium;
+    font-weight: 100;
+}
+footer .fa-chevron-down {
+    position: relative;
+    top: 20%;
+    left: 5%;
+    font-size: 12px;
+    list-style-position: inside;
 }
 }
 @media (min-width : 320px) and (max-width : 480px){
@@ -2250,6 +2471,13 @@ footer{
         padding: 1.5% 6% 1% 6%;
         background-color: white;
         font-family: 'proximanova';
+        margin-bottom: 30px;
+    }
+    .formobile{
+        display: block;
+    }
+    .fordesktop{
+        display: none;
     }
     .hamburger-icon-content{
         display: flex;
@@ -2263,38 +2491,85 @@ footer{
         font-size: 30px;
         letter-spacing: 0.5px;
         color: #161616;
+        animation:  linear 1s  divNavMobileLinks;
+   
     }
+    @keyframes divNavMobileLinks {
+        from {
+          position: relative;
+          left: 50%;
+        }
+        to {
+            position: relative;
+            right: 20%;
+        }
+      }
     .nav-links a{
         color: #161616;
         text-decoration: none;
+        /* font-size: 15px; */
+        font-size: 17px;
+        color: #4c525a;
+        font-family: sans-serif;
+        font-weight: 100;
     }
     .nav-buttons{
         display: none;
     }
     .mobilenav-buttons{
         display: block;
-        width: 90%;
+        width: 100%;
         justify-content: space-between;
         margin-top: 0.5%;
+    }
+    .nav-links .fa-chevron-down{
+        font-size: 12px;
+        position: absolute;
+        left: 200px;
+        bottom: 16px;
     }
     .logo{
         width: 17%;
         display: flex;
     }
     .hamburger-logo{
-        display: none;
+        display: block;
+        width: 24%;
+        margin-top: 10px;
     }
     .logoName {
-        font-size: 43px;
         color: rgb(1, 178, 137);
         font-weight: 600;
         font-family: sans-serif;
         margin-left: 10px;
         padding-top: 15px;
         letter-spacing: 1.7px;
+        font-size: 30px;
+        color: rgb(1, 178, 137);
+        font-weight: 600;
+        /* font-family: 'proximanova,  sans-serif'; */
+        margin-left: 4px;
+        padding-top: 6%;
     }
+    .logo{
+        width: 53%;
+        display: flex;
+    }
+    .logoImg{
+        width: 30%;
+    }
+    /* .productfa{
+        margin-left: 10px;
+        font-size: 25px;
+        position: relative;
+        right: 40px;
+    } */
+    /*hamburger icon*/
     .hamburger-icon{
+        width: 20%;
+        z-index: 99;
         display: block;
+        margin-top: 10px;
     }
     .hambuger-start-button{
         padding: 2.5% 1% 2.5% 1%;
@@ -2303,7 +2578,7 @@ footer{
         color: white;
         border: transparent;
         border-radius: 6px;
-        font-size: 25px;
+        font-size: 12px;
         font-weight: 600;
         font-family: sans-serif;
     }
@@ -2313,13 +2588,31 @@ footer{
         border: 1px solid #00af87;
         background-color: white;
         border-radius: 6px;
-        font-size: 25px;
+        font-size: 12px;
         font-weight: 600;
+        color: #00af87;
+        font-family: sans-serif;
     }
     .hambuger-login-button a{
-        color: #00af87;
+        /* color: #00af87; */
         text-decoration: none;
         font-family: sans-serif !important;
+    }
+    .line {
+        height: 0.5px;
+        background-color: black;
+        margin: 2% 0% 1% 0%;
+    }
+    .hambuger-login-button,
+    .hambuger-start-button{
+        width: 100%;
+        padding: 12px 0px 12px 0px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+    
+    } 
+    .hambuger-login-button a{
+        color: #00af87;
     }
     .switch {
         position: relative;
@@ -2377,54 +2670,12 @@ footer{
         border-radius: 50%;
     }  
     /*logo*/
-.logo{
-    width: 53%;
-    display: flex;
-}
-.logoImg{
-    width: 30%;
-}
-/*bonsai*/
-.logoName{
- font-size: 30px;
- color: rgb(1, 178, 137);
- font-weight: 600;
- font-family: 'proximanova,  sans-serif';
- margin-left: 4px;
- padding-top: 6%;
-}
-/*hamburger icon*/
-.hamburger-icon{
-    width: 30%;
-    z-index: 99;
-    display: block;
-}
+
 
 .line{
     height: 0.5px;
     background-color: black;
     margin: 3% 0% 6% 0%;
-}
-.hambuger-start-button{
-    background-color: #00af87;
-    color: white;
-    border: none;
-}
-
-.hambuger-login-button,
-.hambuger-start-button{
-    width: 100%;
-    padding: 10px 0px 10px 0px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-
-}
-.hambuger-login-button{
-    border: 0.5px solid #00af87;
-    background-color: white;
-} 
-.hambuger-login-button a{
-    color: #00af87;
 }
 .hamburger-icon-content{
     display: block;
@@ -2440,16 +2691,18 @@ footer{
 }
 #product,
 #template{
-    font-size: 16px;
+    font-size: 16.2px;
     color: #4c525a;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
-.hamburger-button{
+/* .hamburger-button{
     margin: 2px;
     height: 30px;
     width: 60%;
     padding-top: 9%;
-}
+} */
 .iconline{
     width: 65%;
     background-color: rgb(79, 79, 79);
@@ -2478,7 +2731,7 @@ footer{
 .headerText{
     display: block;
     justify-content: center;
-    margin-top:53px;
+    margin-top:33px;
     margin-bottom: 30px;
 }
 .plans-pricing{
@@ -2783,28 +3036,47 @@ a{
     margin: 30px 0px 30px 0px;
     padding: 20px 3px 20px 3px;
 }
+.ads-on-price-tag {
+    padding-left: 0px;
+    display: block;
+    justify-content: flex-end;
+    position: relative;
+    top: 0px;
+    padding-right: 35px;
+    bottom: 80px;
+}
 .mini-ad{
-    padding: 2% 20% 14% 20%;
+    padding: 2% 5% 14% 18%;
     background-color: #f2faff;
     margin: 20px;
     text-align: center;
     border-radius: 11px;
+    display: block;
 }
 .your{
     color: rgb(1, 178, 137);
 }
 .mini-ad h4{
     font-size: 40px;
-    line-height: 48px;
+    line-height: 51px;
     margin-bottom: -11px;
+    width: 80%;
 }
 .mini-ad button{
-    padding: 10% 13% 10% 13%;
+    padding: 8% 13% 10% 13%;
     background-color: #00af87;
     color: white;
-    width: 80%;
+    width: 65%;
     border: transparent;
     border-radius: 5px;
+        /* border: transparent;
+    border-radius: 5px;
+    height: 50px; */
+    position: relative;
+    top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    margin-right: 30px;
 }
 .faq{
     margin: 50px 20px 30px 20px;
@@ -2859,8 +3131,17 @@ nav .fa-chevron-down{
     font-size: 13px;
 }
   
-.answer.see {
-    padding: 10px;
+.faq .answer.see {
+    padding-bottom: 180px;
+    width: 280px;
+    font-size: 14px;
+    max-height: 800px; /* Adjust the max height as needed */
+}
+.faq .answer.see {
+    padding-top: 10px;
+    padding-bottom: 150px;
+    width: 280px;
+    font-size: 14px;
     max-height: 800px; /* Adjust the max height as needed */
 }
 /*main ends*/
@@ -2881,6 +3162,17 @@ footer{
 .pBR .pricing{
     margin-bottom: 6px;
     color: rgb(6, 186, 144);
+}
+footer .question{
+    font-size: medium;
+    font-weight: 100;
+}
+footer .fa-chevron-down {
+    position: relative;
+    top: 20%;
+    left: 5%;
+    font-size: 12px;
+    list-style-position: inside;
 }
 }
 @media (max-width : 319px){
